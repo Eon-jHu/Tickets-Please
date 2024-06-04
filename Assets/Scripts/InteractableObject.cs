@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class InteractableObject : CollidableObject
 {
-    // private class variables.
+    // Private class variables.
     private bool HasInteracted = false;
 
     // --------------- Functions --------------- //
