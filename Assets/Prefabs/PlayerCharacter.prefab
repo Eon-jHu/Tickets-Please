@@ -120,6 +120,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7563897261309060661}
+  - component: {fileID: 7058268665038856748}
+  - component: {fileID: 8904999677425981336}
   - component: {fileID: 6865200236037115751}
   - component: {fileID: 2099142970}
   - component: {fileID: 843803759462811513}
@@ -147,6 +149,25 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!222 &7058268665038856748
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774268087239649033}
+  m_CullTransparentMesh: 1
+--- !u!210 &8904999677425981336
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774268087239649033}
+  m_Enabled: 1
+  m_SortingLayerID: 1617840965
+  m_SortingLayer: 2
+  m_SortingOrder: 0
 --- !u!50 &6865200236037115751
 Rigidbody2D:
   serializedVersion: 4
@@ -167,7 +188,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &2099142970
 MonoBehaviour:
   m_ObjectHideFlags: 0

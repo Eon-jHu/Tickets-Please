@@ -14,7 +14,7 @@ public class ConversableObject : InteractableObject
 
             Debug.Log(m_Dialogue.m_Name + " is speaking...");
             // Start Dialoguing
-            DialogueManager.Instance.StartDialogue(m_Dialogue);
+            DialogueManager.Instance.StartDialogue(m_Dialogue, this);
         }
         // If alreading interacting, simulate "CONTINUE" button
         else

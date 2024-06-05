@@ -40,12 +40,12 @@ public class DialogueManager : MonoBehaviour
     }
     // ---------------------------------------------------------
 
-    public void StartDialogue(Dialogue _dialogue)
+    public void StartDialogue(Dialogue _dialogue, ConversableObject _npc)
     {
         Debug.Log("Entering dialogue...");
 
         // Enable the Dialogue Space
-        m_DialogueSpace.Enable();
+        m_DialogueSpace.Enable(_npc);
 
         // Set animation options
         m_Animator.SetBool("IsOpen", true);

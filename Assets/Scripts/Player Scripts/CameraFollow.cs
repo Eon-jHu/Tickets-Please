@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Collections.Specialized;
 using System.Security.Cryptography;
 using System.Threading;
+using TMPro;
 using UnityEngine;
 
 public class CameraFollow : MonoBehaviour
@@ -17,6 +18,9 @@ public class CameraFollow : MonoBehaviour
     public Vector2 MaxPosition;
     public Vector2 MinPosition;
 
+    // Variables for offsetting for dialogue scenes
+    public float dialogueYOffset = 20.0f;
+
     // --------- Functions --------- //
 
     void FixedUpdate()
@@ -28,7 +32,21 @@ public class CameraFollow : MonoBehaviour
         newPos.y = Mathf.Clamp(newPos.y, MinPosition.y, MaxPosition.y); // Clamping y position.
 
         transform.position = Vector3.Lerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
+    }
 
-        Debug.Log("Follow Cam Position: " + transform.position);
+    // Drops the camera down during dialogue
+    public void DropForDialogue(bool _doDrop)
+    {
+        if (_doDrop)
+        {
+            FollowSpeed *= 2.0f;
+            yOffset -= dialogueYOffset;
+            MinPosition.y -= dialogueYOffset;
+            return;
+        }
+
+        yOffset += dialogueYOffset;
+        MinPosition.y += dialogueYOffset;
+        FollowSpeed /= 2.0f;
     }
 }
