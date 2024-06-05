@@ -3,18 +3,16 @@ using UnityEngine;
 
 public class CollidableObject : MonoBehaviour
 {
-    // Private serialized class variables.
+    // Private variables
     [SerializeField] private ContactFilter2D Filter;
-    [SerializeField] private List<Collider2D> CollidedObjects = new List<Collider2D>(1);
-
-    // Private class variables.
+    private List<Collider2D> CollidedObjects = new List<Collider2D>(1);
     private Collider2D Collider;
 
     // --------------- Functions --------------- //
 
     protected virtual void Start()
     {
-        Collider = GetComponent<Collider2D>(); // Get collider from game object.
+        Collider = GetComponentInChildren<Collider2D>(); // Get collider from game object.
     }
 
     protected virtual void Update()

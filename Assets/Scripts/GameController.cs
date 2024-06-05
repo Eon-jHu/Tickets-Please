@@ -16,29 +16,42 @@ public enum GameState
 
 public class GameController : MonoBehaviour
 {
-    GameState m_State;
-    [SerializeField] public PlayerController m_PlayerController;
-    [SerializeField] Camera m_Camera;
+    private GameState m_State;
+
+    [SerializeField]
+    public PlayerController m_PlayerController;
+
+    [SerializeField]
+    public Camera m_Camera;
+
+    private InteractableObject[] m_Entities;
+    
     // [SerializeField] CameraShake m_CameraShake;
-    [SerializeField] public AudioManager m_AudioManager;
-    [SerializeField] InteractableObject[] m_Entities;
 
     public GameState State { get { return m_State; } }
     public void SetState(GameState _state) { m_State = _state; }
 
-    public static GameController instance;
+    // ----------------------- Singleton -----------------------
+    public static GameController Instance;
 
     private void Awake()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = FindObjectOfType<GameController>();
+            Instance = FindObjectOfType<GameController>();
         }
-        else if (instance != FindObjectOfType<GameController>())
+        else if (Instance != FindObjectOfType<GameController>())
         {
             Destroy(FindObjectOfType<GameController>());
         }
     }
+
+    // OnDestroy is called when the object is destroyed
+    private void OnDestroy()
+    {
+        Instance = null;
+    }
+    // ---------------------------------------------------------
 
     // Subscribe to the created event
     private void Start()
@@ -46,7 +59,6 @@ public class GameController : MonoBehaviour
         // Observer/Subscriber Pattern
         //m_PlayerController.OnEncountered += StartBattle;
     }
-
 
     // Update is called once per frame
     void Update()

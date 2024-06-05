@@ -28,5 +28,7 @@ public class CameraFollow : MonoBehaviour
         newPos.y = Mathf.Clamp(newPos.y, MinPosition.y, MaxPosition.y); // Clamping y position.
 
         transform.position = Vector3.Lerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
+
+        Debug.Log("Follow Cam Position: " + transform.position);
     }
 }

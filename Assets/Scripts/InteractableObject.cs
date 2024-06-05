@@ -5,22 +5,16 @@ using UnityEngine;
 public class InteractableObject : CollidableObject
 {
     // Private class variables.
-    private bool HasInteracted = false;
+    protected bool HasInteracted = false;
 
     // --------------- Functions --------------- //
 
     protected override void OnCollided(GameObject _CollidedObject)
     {
-        // Check for a button push.
-        if(Input.GetKey(KeyCode.E))
+        // Check for a button press
+        if(Input.GetKeyDown(KeyCode.E))
         {
             OnInteract();
-        }
-
-        // Reset HasInteracted when button is released.
-        if (Input.GetKeyUp(KeyCode.E))
-        {
-            HasInteracted = false;
         }
     }
 
@@ -31,11 +25,6 @@ public class InteractableObject : CollidableObject
         {
             HasInteracted = true;
             Debug.Log("Interacting with " + name);
-        }
-        else
-        {
-            // Logic for interacting multiple times if neccesary.
-        }
-      
+        }      
     }
 }
