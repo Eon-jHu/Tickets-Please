@@ -11,34 +11,10 @@ public class DialogueManager : MonoBehaviour
     public TextMeshProUGUI m_DialogueText;
     public Animator m_Animator;
 
-    private Queue<string> m_SentencesQueue;
+    private Queue<string> m_SentencesQueue = new Queue<string>();
     private Dialogue m_CurrentDialogue = null;
     private string m_CurrentSentence = null;
     private bool m_IsTyping = false;
-
-
-    // ----------------------- Singleton -----------------------
-    public static DialogueManager Instance { get; private set; }
-
-    private void Awake()
-    {
-        if (Instance == null)
-        {
-            Instance = FindObjectOfType<DialogueManager>();
-        }
-        else if (Instance != FindObjectOfType<DialogueManager>())
-        {
-            Destroy(FindObjectOfType<DialogueManager>());
-        }
-    }
-
-
-    // OnDestroy is called when the object is destroyed
-    private void OnDestroy()
-    {
-        Instance = null;
-    }
-    // ---------------------------------------------------------
 
     public void StartDialogue(Dialogue _dialogue, ConversableObject _npc)
     {
@@ -57,10 +33,10 @@ public class DialogueManager : MonoBehaviour
         m_CurrentDialogue = _dialogue;
 
         // Set the name
-        m_NameText.text = _dialogue.m_Name;
+        m_NameText.text = m_CurrentDialogue.m_Name;
 
         // Queue up the sentences
-        foreach (string sentence in _dialogue.m_Sentences)
+        foreach (string sentence in m_CurrentDialogue.m_Sentences)
         {
             m_SentencesQueue.Enqueue(sentence);
         }
@@ -70,6 +46,8 @@ public class DialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
+        Debug.Log("Sentences = " + m_CurrentDialogue.m_Sentences.Length);
+
         if (m_CurrentDialogue == null)
         {
             Debug.Log("ERROR: NO DIALOGUE INSERTED!");

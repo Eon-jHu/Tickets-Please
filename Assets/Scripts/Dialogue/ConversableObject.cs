@@ -14,12 +14,12 @@ public class ConversableObject : InteractableObject
 
             Debug.Log(m_Dialogue.m_Name + " is speaking...");
             // Start Dialoguing
-            DialogueManager.Instance.StartDialogue(m_Dialogue, this);
+            EncounterManager.Instance.StartEncounter(m_Dialogue, this, EncounterState.NPCTalking);
         }
         // If alreading interacting, simulate "CONTINUE" button
         else
         {
-            DialogueManager.Instance.DisplayNextSentence();
+            EncounterManager.Instance.ContinueEncounter();
         }
     }
 }
