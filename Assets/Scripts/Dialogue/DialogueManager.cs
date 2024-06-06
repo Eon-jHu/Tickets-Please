@@ -44,38 +44,66 @@ public class DialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
-    public void DisplayNextSentence()
+    public void ContinueDialogue(Dialogue _dialogue, ConversableObject _npc)
     {
-        Debug.Log("Sentences = " + m_CurrentDialogue.m_Sentences.Length);
+        Debug.Log("Entering dialogue...");
+
+        // Clears sentences from previous dialogues
+        m_SentencesQueue.Clear();
+
+        // Set the current dialogue
+        m_CurrentDialogue = _dialogue;
+
+        // Set the name
+        m_NameText.text = m_CurrentDialogue.m_Name;
+
+        // Queue up the sentences
+        foreach (string sentence in m_CurrentDialogue.m_Sentences)
+        {
+            m_SentencesQueue.Enqueue(sentence);
+        }
+
+        DisplayNextSentence();
+    }
+
+    // Returns TRUE if conversation is over.
+    public bool DisplayNextSentence()
+    {
+        Debug.Log("Sentences = " + m_SentencesQueue.Count);
+        Debug.Log("Current Dialogue = " + m_CurrentDialogue);
+        Debug.Log("IsTyping = " + m_IsTyping);
 
         if (m_CurrentDialogue == null)
         {
             Debug.Log("ERROR: NO DIALOGUE INSERTED!");
             EndDialogue();
-            return;
+            return true;
         }
 
         if (m_SentencesQueue.Count <= 0)
         {
             Debug.Log(m_CurrentDialogue.m_Name + " has nothing more to say.");
-            EndDialogue();
-            return;
+            return true;
         }
 
         // If TYPING, finish the current line instead
         if (m_IsTyping)
         {
             FinishTyping();
-            return;
+            return false;
         }
 
         m_CurrentSentence = m_SentencesQueue.Dequeue();
+
+        Debug.Log(m_CurrentSentence);
 
         // Stop animating previous text
         StopAllCoroutines();
 
         // Start new coroutine to type sentence
         StartCoroutine(TypeSentence(m_CurrentSentence, m_CurrentDialogue.m_TextSpeed));
+
+        return false;
     }
 
     IEnumerator TypeSentence (string _sentence, float _textSpeed)

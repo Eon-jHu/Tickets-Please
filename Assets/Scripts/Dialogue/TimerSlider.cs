@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -5,18 +6,15 @@ using UnityEngine.UI;
 
 public class TimerSlider : MonoBehaviour
 {
-    [SerializeField]
+
     public Slider timerSlider;
-
-    [SerializeField]
     public Image barColor;
-
-    [SerializeField]
     public float totalTime = 10.0f;
 
-    private float remainingTime;
+    [NonSerialized]
+    public float remainingTime;
 
-    void Start()
+    void OnEnable()
     {
         if (timerSlider != null)
         {

@@ -8,7 +8,7 @@ public class DialogueSpace : MonoBehaviour
     [SerializeField]
     private CameraFollow m_FollowCam;
 
-    private ConversableObject m_ConversingObject = null;
+    public ConversableObject m_ConversingObject { get; private set; }
 
     // Start is called before the first frame update
     void Start()

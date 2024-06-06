@@ -10,12 +10,5 @@ public class Dialogue
     [TextArea(1, 10)]
     public string[] m_Sentences;
 
-    [TextArea(0, 9)]
-    public string[] m_Responses;
-
-    // Write your single-sentence response in the corresponding element
-    [TextArea(0, 9)]
-    public string[] m_ReactionToResponse;
-
     public float m_TextSpeed = 0.05f;
 }

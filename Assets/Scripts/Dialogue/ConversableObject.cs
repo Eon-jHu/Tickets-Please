@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ConversableObject : InteractableObject
 {
-    [SerializeField] private Dialogue m_Dialogue;
+    public InitialDialogue m_InitialDialogue;
 
     protected override void OnInteract()
     {
@@ -12,9 +12,9 @@ public class ConversableObject : InteractableObject
         {
             base.OnInteract();
 
-            Debug.Log(m_Dialogue.m_Name + " is speaking...");
+            Debug.Log(m_InitialDialogue.m_Name + " is speaking...");
             // Start Dialoguing
-            EncounterManager.Instance.StartEncounter(m_Dialogue, this, EncounterState.NPCTalking);
+            EncounterManager.Instance.StartEncounter(m_InitialDialogue, this, EncounterState.NPCTalking);
         }
         // If alreading interacting, simulate "CONTINUE" button
         else
