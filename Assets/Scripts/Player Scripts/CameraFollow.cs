@@ -28,8 +28,8 @@ public class CameraFollow : MonoBehaviour
         Vector3 newPos = new Vector3(target.position.x - xOffset, target.position.y + yOffset, -10.0f);
 
         // Clamp camera to minimum and maximum for room size (ensures camera stays within room bounds).
-        newPos.x = Mathf.Clamp(newPos.x, MinPosition.x, MaxPosition.x); // Clamping x position.
-        newPos.y = Mathf.Clamp(newPos.y, MinPosition.y, MaxPosition.y); // Clamping y position.
+      //  newPos.x = Mathf.Clamp(newPos.x, MinPosition.x, MaxPosition.x); // Clamping x position.
+      //  newPos.y = Mathf.Clamp(newPos.y, MinPosition.y, MaxPosition.y); // Clamping y position.
 
         transform.position = Vector3.Lerp(transform.position, newPos, FollowSpeed * Time.deltaTime);
     }
