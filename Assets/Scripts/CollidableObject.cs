@@ -13,6 +13,7 @@ public class CollidableObject : MonoBehaviour
     protected virtual void Start()
     {
         Collider = GetComponentInChildren<Collider2D>(); // Get collider from game object.
+        // Filter.SetLayerMask(LayerMask.GetMask("NPCs")); // Only detect objects in the "NPCs" layer.
     }
 
     protected virtual void Update()
@@ -22,7 +23,9 @@ public class CollidableObject : MonoBehaviour
 
         foreach(var o in CollidedObjects)
         {
-            OnCollided(o.gameObject);
+
+          OnCollided(o.gameObject);
+            
         }
     }
 

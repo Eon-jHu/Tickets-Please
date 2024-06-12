@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - NPC
   layers:
   - Default
   - TransparentFX
@@ -11,7 +12,7 @@ TagManager:
   - Player
   - Water
   - UI
-  - 
+  - NPCs
   - 
   - 
   - 
@@ -41,15 +42,33 @@ TagManager:
   - name: Default
     uniqueID: 0
     locked: 0
+  - name: Props
+    uniqueID: 2219238911
+    locked: 0
+  - name: DoubleChairs
+    uniqueID: 1057468305
+    locked: 0
   - name: Interactables
     uniqueID: 2886771371
     locked: 0
+  - name: DoubleTables
+    uniqueID: 837375885
+    locked: 0
   - name: Player
     uniqueID: 1617840965
+    locked: 0
+  - name: SingleTables
+    uniqueID: 1220449737
+    locked: 0
+  - name: SingleChair
+    uniqueID: 30311101
     locked: 0
   - name: DialogueObjects
     uniqueID: 950187941
     locked: 0
   - name: UI
     uniqueID: 2081737059
+    locked: 0
+  - name: 
+    uniqueID: 3312311825
     locked: 0

@@ -11,6 +11,8 @@ public class InteractableObject : CollidableObject
 
     protected override void OnCollided(GameObject _CollidedObject)
     {
+        // base.OnCollided(_CollidedObject);
+
         // Check for a button press
         if(Input.GetKeyDown(KeyCode.E))
         {
@@ -25,6 +27,10 @@ public class InteractableObject : CollidableObject
         {
             HasInteracted = true;
             Debug.Log("Interacting with " + name);
-        }      
+        }
+        else
+        {
+            Debug.Log("AlreadyInteracted");
+        }
     }
 }
