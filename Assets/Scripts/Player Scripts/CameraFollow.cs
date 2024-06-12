@@ -21,6 +21,12 @@ public class CameraFollow : MonoBehaviour
     // Variables for offsetting for dialogue scenes
     public float dialogueYOffset = 20.0f;
 
+    // --------- Private class variables --------- //
+    private float OriginalFollowSpeed;
+    private float OriginalYOffset;
+    private float OriginalMinPositionY;
+    private bool AreValuesStored = false;
+
     // --------- Functions --------- //
 
     void FixedUpdate()
@@ -39,14 +45,27 @@ public class CameraFollow : MonoBehaviour
     {
         if (_doDrop)
         {
+            // Store the original values of cam clamping at drop.
+            if (!AreValuesStored)
+            {
+                OriginalFollowSpeed = FollowSpeed;
+                OriginalYOffset = yOffset;
+                OriginalMinPositionY = MinPosition.y;
+                AreValuesStored = true;
+            }
+
             FollowSpeed *= 2.0f;
             yOffset -= dialogueYOffset;
             MinPosition.y -= dialogueYOffset;
-            return;
         }
+        else // When dialogue is over.
+        {
+            // Revert to orignnal cam values.
+            FollowSpeed = OriginalFollowSpeed;
+            yOffset = OriginalYOffset;
+            MinPosition.y = OriginalMinPositionY;
 
-        yOffset += dialogueYOffset;
-        MinPosition.y += dialogueYOffset;
-        FollowSpeed /= 2.0f;
+            AreValuesStored = false;
+        }
     }
 }
