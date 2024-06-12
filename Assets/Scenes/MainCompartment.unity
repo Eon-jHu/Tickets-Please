@@ -2244,7 +2244,8 @@ GameObject:
   - component: {fileID: 519450874}
   - component: {fileID: 519450876}
   - component: {fileID: 519450875}
-  m_Layer: 3
+  - component: {fileID: 519450877}
+  m_Layer: 0
   m_Name: Lincoln
   m_TagString: Player
   m_Icon: {fileID: 0}
@@ -2279,7 +2280,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.217875, y: -1.1748849}
+  m_Offset: {x: -0.0138943195, y: -1.1748849}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2290,7 +2291,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.4481916, y: 1.5472066}
+  m_Size: {x: 2.0402303, y: 1.5472066}
   m_EdgeRadius: 0
 --- !u!212 &519450876
 SpriteRenderer:
@@ -2344,6 +2345,22 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!70 &519450877
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519450873}
+  m_Enabled: 0
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.018655093, y: -0.22385986}
+  m_Size: {x: 2.7588909, y: 4.3177204}
+  m_Direction: 0
 --- !u!1 &547804920
 GameObject:
   m_ObjectHideFlags: 0
@@ -4783,13 +4800,14 @@ GameObject:
   - component: {fileID: 1108495847}
   - component: {fileID: 1108495849}
   - component: {fileID: 1108495848}
+  - component: {fileID: 1108495850}
   m_Layer: 3
   m_Name: AngryNPC
   m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1108495846
 Transform:
   m_ObjectHideFlags: 0
@@ -4835,6 +4853,7 @@ MonoBehaviour:
   m_InitialDialogue:
     m_Name: Bob
     m_Sentences:
+    - .
     - ...Oh huh? What did you say?
     - Oh my ticket. Sure.
     - ...
@@ -4863,6 +4882,7 @@ MonoBehaviour:
         - Heh. Thanks.
         m_TextSpeed: 0
       m_Success: 1
+  playerIsClose: 0
 --- !u!210 &1108495848
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -4882,6 +4902,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1108495845}
   m_CullTransparentMesh: 1
+--- !u!70 &1108495850
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1108495845}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.5123625, y: -1.016187}
+  m_Size: {x: 1.524725, y: 3.032374}
+  m_Direction: 0
 --- !u!1 &1110358163
 GameObject:
   m_ObjectHideFlags: 0
@@ -5009,6 +5045,7 @@ GameObject:
   - component: {fileID: 1167684088}
   - component: {fileID: 1167684090}
   - component: {fileID: 1167684089}
+  - component: {fileID: 1167684091}
   m_Layer: 3
   m_Name: TrainManagerNPC
   m_TagString: Player
@@ -5085,6 +5122,7 @@ MonoBehaviour:
         - '*star rails you*'
         m_TextSpeed: 0
       m_Success: 0
+  playerIsClose: 0
 --- !u!210 &1167684089
 SortingGroup:
   m_ObjectHideFlags: 0
@@ -5104,6 +5142,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1167684084}
   m_CullTransparentMesh: 1
+--- !u!70 &1167684091
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1167684084}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 4.3365912, y: -1.1902341}
+  m_Size: {x: 1.9696798, y: 3.8326552}
+  m_Direction: 0
 --- !u!1 &1169410550
 GameObject:
   m_ObjectHideFlags: 0
@@ -7169,7 +7223,7 @@ GameObject:
   - component: {fileID: 1557487160}
   - component: {fileID: 1557487159}
   - component: {fileID: 1557487161}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: EventSystem
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9473,6 +9527,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1659799681775570307, guid: b95a599b56a5cc444b9c9ce0e35192f7, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 1659799681775570307, guid: b95a599b56a5cc444b9c9ce0e35192f7, type: 3}
       propertyPath: m_TagString
       value: Player
       objectReference: {fileID: 0}
@@ -9547,6 +9605,10 @@ PrefabInstance:
     - target: {fileID: 7774268087239649033, guid: b95a599b56a5cc444b9c9ce0e35192f7, type: 3}
       propertyPath: m_Name
       value: Amelio
+      objectReference: {fileID: 0}
+    - target: {fileID: 7774268087239649033, guid: b95a599b56a5cc444b9c9ce0e35192f7, type: 3}
+      propertyPath: m_Layer
+      value: 3
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b95a599b56a5cc444b9c9ce0e35192f7, type: 3}
