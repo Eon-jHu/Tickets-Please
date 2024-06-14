@@ -176,6 +176,8 @@ public class EncounterManager : MonoBehaviour
             responseButton.gameObject.SetActive(false);
         }
 
+        // Disable the speech bubble.
+
         // End Dialogue
         m_DialogueManager.EndDialogue();
 

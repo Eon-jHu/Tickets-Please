@@ -15,6 +15,7 @@ public class DialogueManager : MonoBehaviour
     private Dialogue m_CurrentDialogue = null;
     private string m_CurrentSentence = null;
     private bool m_IsTyping = false;
+    private ConversableObject CurrentNPC; // Reference to the current NPC for interaction.
 
     public void StartDialogue(Dialogue _dialogue, ConversableObject _npc)
     {
@@ -148,5 +149,11 @@ public class DialogueManager : MonoBehaviour
     void Start()
     {
         m_SentencesQueue = new Queue<string>();
+    }
+
+    public void SetCurrentNPC(ConversableObject _CurrentNPC)
+    {
+        // Set the current NPC for interaction.
+        CurrentNPC = _CurrentNPC;
     }
 }

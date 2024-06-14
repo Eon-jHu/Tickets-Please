@@ -3,6 +3,8 @@ using UnityEngine;
 
 public class CollidableObject : MonoBehaviour
 {
+    // protected GameObject SpeechBubble;
+
     // Private variables
     [SerializeField] private ContactFilter2D Filter;
     private List<Collider2D> CollidedObjects = new List<Collider2D>(1);
@@ -14,6 +16,9 @@ public class CollidableObject : MonoBehaviour
     {
         Collider = GetComponentInChildren<Collider2D>(); // Get collider from game object.
         // Filter.SetLayerMask(LayerMask.GetMask("NPCs")); // Only detect objects in the "NPCs" layer.
+
+        // Find the speech bubble component with a tag.
+        //SpeechBubble = transform.Find("SpeechBubble").gameObject;
     }
 
     protected virtual void Update()

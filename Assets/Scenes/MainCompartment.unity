@@ -4918,6 +4918,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 14a5863172965644ebd86916c8b7c2c8, type: 3}
+--- !u!1 &1102639997 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 329514867043082289, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+  m_PrefabInstance: {fileID: 6802786734099650099}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1107232794
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -5327,7 +5332,7 @@ GameObject:
   - component: {fileID: 2354018742996370643}
   m_Layer: 3
   m_Name: SpeechBubble
-  m_TagString: Untagged
+  m_TagString: SpeechBubble
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6419,7 +6424,9 @@ MonoBehaviour:
         - Moo...
         m_TextSpeed: 0
       m_Success: 1
-  playerIsClose: 0
+  PlayerIsClose: 0
+  dialogueManager: {fileID: 1530172866}
+  SpeechBubble: {fileID: 1191784544}
 --- !u!1 &1339036216
 GameObject:
   m_ObjectHideFlags: 0
@@ -7190,6 +7197,11 @@ Transform:
   m_Father: {fileID: 1197542362}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1450915604 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1354153201490347774, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+  m_PrefabInstance: {fileID: 6279151712263162754}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1454099432
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -10436,6 +10448,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 494676627}
     m_Modifications:
+    - target: {fileID: 1354153201490347774, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_TagString
+      value: SpeechBubble
+      objectReference: {fileID: 0}
     - target: {fileID: 6279151711221778020, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -10480,6 +10496,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: SpeechBubble
+      value: 
+      objectReference: {fileID: 1450915604}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1530172866}
     - target: {fileID: 6279151711221778023, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
       propertyPath: m_Name
       value: AngryNPC
@@ -10837,6 +10861,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 494676627}
     m_Modifications:
+    - target: {fileID: 329514867043082289, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_TagString
+      value: SpeechBubble
+      objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755462, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -10900,6 +10928,18 @@ PrefabInstance:
     - target: {fileID: 6802786733099755464, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_Offset.y
       value: 1.3444402
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: SpeechBubble
+      value: 
+      objectReference: {fileID: 1102639997}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: dialogueManager
+      value: 
+      objectReference: {fileID: 1530172866}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: Filter.layerMask.m_Bits
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.size
