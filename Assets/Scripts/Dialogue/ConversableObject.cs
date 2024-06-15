@@ -1,17 +1,23 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ConversableObject : InteractableObject
 {
+    // Public class variables.
     public InitialDialogue m_InitialDialogue;
     public bool PlayerIsClose;
 
+    // Private class variables.
+    private bool NPCInteractionComplete = false;
+
+    // Serialised class variables.
     [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private GameObject SpeechBubble;
 
-    private bool NPCInteractionComplete = false;
 
+    // --------------- Functions --------------- //
     protected override void OnInteract()
     {
         if (!HasInteracted)
@@ -31,6 +37,9 @@ public class ConversableObject : InteractableObject
 
                 // Set interaction as complete.
                 NPCInteractionComplete = true;
+
+                // Add a ticket.
+                TicketScore.TicketNumber += 1;
             }
         }
         // If alreading interacting, simulate "CONTINUE" button

@@ -10,9 +10,7 @@ public class InteractableObject : CollidableObject
     // --------------- Functions --------------- //
 
     protected override void OnCollided(GameObject _CollidedObject)
-    {
-        // base.OnCollided(_CollidedObject);
-
+    { 
         // Check for a button press
         if(Input.GetKeyDown(KeyCode.E))
         {
