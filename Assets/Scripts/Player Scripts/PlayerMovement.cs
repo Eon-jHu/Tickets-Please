@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
     {
         RigidBody = GetComponent<Rigidbody2D>();
         PlayerAnim = GetComponent<Animator>();
+        PlayerAnim.SetBool("IsWalking", false);
     }
 
     private void OnMovement(InputValue _Value) // Called when character moves.
