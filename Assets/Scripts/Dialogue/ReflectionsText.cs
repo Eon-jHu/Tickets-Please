@@ -48,7 +48,7 @@ public class ReflectionsText : MonoBehaviour
         ReflectionText.text = ReflectionSentences[ReflectionSentencesIndex];
 
         // Wait for 7 seconds before hiding reflection dialogr.
-        yield return new WaitForSeconds(7.0f);
+        yield return new WaitForSeconds(4.0f);
 
         // Hide reflections box again.
         ReflectionsBox.SetActive(false);

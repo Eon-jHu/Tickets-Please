@@ -43,7 +43,7 @@ public class ConversableObject : InteractableObject
                 NPCInteractionComplete = true;
 
                 // Add a ticket.
-                TicketScore.TicketNumber += 1;
+                 // TicketScore.TicketNumber += 1;
             }
         }
         // If alreading interacting, simulate "CONTINUE" button

@@ -139,6 +139,9 @@ public class DialogueManager : MonoBehaviour
     {
         Debug.Log("Exiting dialogue...");
 
+        // Add a ticket.
+        TicketScore.TicketNumber += 1;
+
         m_Animator.SetBool("IsOpen", false);
 
         // Disable the Dialogue Space
