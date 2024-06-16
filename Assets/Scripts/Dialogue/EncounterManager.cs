@@ -68,7 +68,7 @@ public class EncounterManager : MonoBehaviour
         {
             m_DialogueManager.StartDialogue(_dialogue, _npc);
         }
-        // Finalizes encounter
+        // Timeout dialogue
         else
         {
             m_DialogueManager.ContinueDialogue(_dialogue, _npc);
@@ -169,6 +169,21 @@ public class EncounterManager : MonoBehaviour
         m_TimerSlider.gameObject.SetActive(true);
     }
 
+    private void TimeoutEncounter()
+    {
+        // Disable Game Objects
+        foreach (ResponseButton responseButton in m_ResponseButtons)
+        {
+            responseButton.gameObject.SetActive(false);
+        }
+
+        // Start a new (final) encounter
+        StartEncounter(m_DialogueManager.m_DialogueSpace.m_ConversingObject.m_TimeoutDialogue, m_DialogueManager.m_DialogueSpace.m_ConversingObject, m_EState);
+
+        // Show continue button
+        m_ContinueButton.gameObject.SetActive(true);
+    }
+
     private void EndEncounter()
     {
         // Disable Game Objects
@@ -201,9 +216,9 @@ public class EncounterManager : MonoBehaviour
         }
     }
 
-    void UpdateMode(EncounterState _eState)
+    void Update()
     {
-        switch (_eState)
+        switch (m_EState)
         {
             case EncounterState.NPCTalking:
                 break;
@@ -213,7 +228,7 @@ public class EncounterManager : MonoBehaviour
                 if (m_TimerSlider.remainingTime <= 0)
                 {
                     m_EState = EncounterState.Loss;
-                    EndEncounter();
+                    TimeoutEncounter();
 
                     Debug.Log("ENCOUNTER ENDED DUE TO TIMEOUT");
                 }

@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class TicketScore : MonoBehaviour
 {
-    public static int TicketNumber = 0;
+    public static int TicketNumber = -1; // IT'S GOOD!
     Text Tickets;
 
     private void Start()

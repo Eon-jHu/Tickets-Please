@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour
 {
     [SerializeField] public PlayerMovement m_PlayerMovement;
 
+    [SerializeField] public GameObject m_TicketUI;
+
     // ----------------------- Singleton -----------------------
     public static PlayerController Instance { get; private set; }
 
@@ -21,6 +23,10 @@ public class PlayerController : MonoBehaviour
         }
     }
 
+    private void Start()
+    {
+        m_TicketUI.SetActive(false);
+    }
 
     // OnDestroy is called when the object is destroyed
     private void OnDestroy()

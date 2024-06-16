@@ -81,17 +81,17 @@ public class DialogueManager : MonoBehaviour
             return true;
         }
 
-        if (m_SentencesQueue.Count <= 0)
-        {
-            Debug.Log(m_CurrentDialogue.m_Name + " has nothing more to say.");
-            return true;
-        }
-
         // If TYPING, finish the current line instead
         if (m_IsTyping)
         {
             FinishTyping();
             return false;
+        }
+
+        if (m_SentencesQueue.Count <= 0)
+        {
+            Debug.Log(m_CurrentDialogue.m_Name + " has nothing more to say.");
+            return true;
         }
 
         m_CurrentSentence = m_SentencesQueue.Dequeue();
@@ -143,6 +143,9 @@ public class DialogueManager : MonoBehaviour
 
         // Disable the Dialogue Space
         m_DialogueSpace.Disable();
+
+        // LMAO DON'T ASK WHY JUST LEAVE IT IN
+        PlayerController.Instance.m_TicketUI.SetActive(true);
     }
 
     // Start is called before the first frame update

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -7,6 +8,9 @@ public class ConversableObject : InteractableObject
 {
     // Public class variables.
     public InitialDialogue m_InitialDialogue;
+    public Dialogue m_TimeoutDialogue;
+
+    [NonSerialized]
     public bool PlayerIsClose;
 
     // Private class variables.

@@ -46,7 +46,8 @@ public class TimerSlider : MonoBehaviour
         }
         else
         {
-            // TODO: Finish logic with a loss;
+            remainingTime = 0;
+            gameObject.SetActive(false);
         }
     }
 }

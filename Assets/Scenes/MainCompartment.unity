@@ -409,20 +409,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45b7ae76a7460604ba6a2f7cd0b342aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Filter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 8
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
 --- !u!61 &124368214
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1795,20 +1781,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 45b7ae76a7460604ba6a2f7cd0b342aa, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Filter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 8
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
 --- !u!61 &392728089
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -7484,24 +7456,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1bc1f849193e53147b7491e0a590e840, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Filter:
-    useTriggers: 0
-    useLayerMask: 0
-    useDepth: 0
-    useOutsideDepth: 0
-    useNormalAngle: 0
-    useOutsideNormalAngle: 0
-    layerMask:
-      serializedVersion: 2
-      m_Bits: 0
-    minDepth: 0
-    maxDepth: 0
-    minNormalAngle: 0
-    maxNormalAngle: 0
   m_InitialDialogue:
     m_Name: CowGirl
     m_Sentences:
-    - .
     - (MOO)!
     - Haha. Moo!
     - Heh~
@@ -7515,7 +7472,10 @@ MonoBehaviour:
         - Moo...
         m_TextSpeed: 0
       m_Success: 1
-  PlayerIsClose: 0
+  m_TimeoutDialogue:
+    m_Name: 
+    m_Sentences: []
+    m_TextSpeed: 0.05
   dialogueManager: {fileID: 1530172866}
   SpeechBubble: {fileID: 1191784544}
 --- !u!1 &1339036216
@@ -12460,6 +12420,26 @@ PrefabInstance:
       propertyPath: dialogueManager
       value: 
       objectReference: {fileID: 1530172866}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[0]
+      value: ...Oh huh? What did you say?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[1]
+      value: Oh my ticket. Sure.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[2]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[3]
+      value: Could you let me know where the bathrooms are?
+      objectReference: {fileID: 0}
     - target: {fileID: 6279151711221778023, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
       propertyPath: m_Name
       value: AngryNPC
@@ -12501,6 +12481,10 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.oldSize.y
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 843803759462811513, guid: b95a599b56a5cc444b9c9ce0e35192f7, type: 3}
+      propertyPath: m_TicketUI
+      value: 
+      objectReference: {fileID: 40234222}
     - target: {fileID: 1457923476626643153, guid: b95a599b56a5cc444b9c9ce0e35192f7, type: 3}
       propertyPath: m_LocalScale.x
       value: 1
@@ -12910,34 +12894,51 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Name
+      value: LINCOLN (Disappointed)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.size
       value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
-      propertyPath: m_InitialDialogue.m_Sentences.Array.data[0]
-      value: .
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.size
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
-      propertyPath: m_InitialDialogue.m_Sentences.Array.data[1]
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[0]
       value: Hey. Amelio.
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
-      propertyPath: m_InitialDialogue.m_Sentences.Array.data[2]
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[1]
       value: It's been like two hours, lass. Are you alright? It's nigh time to check
         on the passengers.
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
-      propertyPath: m_InitialDialogue.m_Sentences.Array.data[3]
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[2]
       value: There could potentially be illegal immigrants on board, or worse, sussy
         bakas.
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
-      propertyPath: m_InitialDialogue.m_Sentences.Array.data[4]
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[3]
       value: Don't make me regret hiring you. If you do, I'll have to star rail you.
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
-      propertyPath: m_InitialDialogue.m_Sentences.Array.data[5]
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[4]
       value: Do you understand?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[5]
+      value: After you finish talking to me you'll see a ticket number on the top-right
+        hand side of your screen!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[0]
+      value: ... Tsk.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[1]
+      value: Just get to it.
       objectReference: {fileID: 0}
     - target: {fileID: 6802786734058366666, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_Layer
