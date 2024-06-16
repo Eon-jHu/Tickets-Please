@@ -10,6 +10,7 @@ public class TimerSlider : MonoBehaviour
     public Slider timerSlider;
     public Image barColor;
     public float totalTime = 10.0f;
+    public AudioManager audioManager;
 
     [NonSerialized]
     public float remainingTime;
@@ -22,6 +23,18 @@ public class TimerSlider : MonoBehaviour
             timerSlider.maxValue = totalTime;
             timerSlider.value = timerSlider.maxValue;
         }
+
+        if (audioManager != null)
+        {
+            audioManager.HeartbeatSound.Play();
+            audioManager.EarRinging.Play();
+        }
+    }
+
+    private void OnDisable()
+    {
+        audioManager.HeartbeatSound.Stop();
+        audioManager.EarRinging.Stop();
     }
 
     // Update is called once per frame
@@ -43,6 +56,10 @@ public class TimerSlider : MonoBehaviour
                 barColor.color = Color.Lerp(Color.red, Color.yellow, remainingTime / halfTime);
             }
 
+
+            // Change volume based on closeness to 0;
+            audioManager.EarRinging.volume = (1.0f - (remainingTime / totalTime)) / 4;
+            audioManager.HeartbeatSound.volume = 1.0f - (remainingTime / totalTime);
         }
         else
         {
