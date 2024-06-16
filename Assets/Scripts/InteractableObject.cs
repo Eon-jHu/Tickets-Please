@@ -2,15 +2,15 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InteractableObject : CollidableObject
+public class InteractableObject : MonoBehaviour
 {
     // Private class variables.
     protected bool HasInteracted = false;
 
     // --------------- Functions --------------- //
 
-    protected override void OnCollided(GameObject _CollidedObject)
-    { 
+    protected virtual void OnCollided()
+    {
         // Check for a button press
         if(Input.GetKeyDown(KeyCode.E))
         {

@@ -49,18 +49,32 @@ public class ConversableObject : InteractableObject
         }
     }
 
-    private void OnTriggerEnter2D(Collider2D other)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         // Check if the player is colliding with the NPC.
-        if (other.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             PlayerIsClose = true;
         }
+
+        base.OnCollided();
     }
 
-    protected override void Update()
+    private void OnTriggerExit2D(Collider2D collision)
     {
-        base.Update();
+        // Check if the player is colliding with the NPC.
+        if (collision.CompareTag("Player"))
+        {
+            PlayerIsClose = false;
+        }
+    }
+
+    protected void Update()
+    {
+        if (PlayerIsClose)
+        {
+            OnCollided();
+        }
 
         // If NPC interaction is finished, hide the speech bubble.
         if (NPCInteractionComplete)

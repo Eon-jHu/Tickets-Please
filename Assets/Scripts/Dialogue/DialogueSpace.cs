@@ -21,7 +21,7 @@ public class DialogueSpace : MonoBehaviour
         // Adjust the layers of the npc and the player
         m_ConversingObject = _npc;
         m_ConversingObject.GetComponent<SortingGroup>().sortingLayerName = "DialogueObjects";
-        PlayerController.Instance.GetComponent<SortingGroup>().sortingLayerName = "DialogueObjects";
+        PlayerController.Instance.GetComponent<SortingGroup>().sortingLayerName = "DialoguePlayer";
 
         // Adjust the offset of cam so you can see the characters
         m_FollowCam.DropForDialogue(true);

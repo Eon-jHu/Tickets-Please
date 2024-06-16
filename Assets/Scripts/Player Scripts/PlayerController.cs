@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    [SerializeField] private PlayerMovement m_PlayerMovement;
+    [SerializeField] public PlayerMovement m_PlayerMovement;
 
     // ----------------------- Singleton -----------------------
     public static PlayerController Instance { get; private set; }

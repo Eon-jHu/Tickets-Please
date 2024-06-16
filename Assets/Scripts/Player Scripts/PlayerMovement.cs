@@ -8,6 +8,9 @@ public class PlayerMovement : MonoBehaviour
     // Private serialized class variables.
     [SerializeField] private int MovementSpeed = 5;
 
+    // Can Move Flag
+    public bool bCanMove = true;
+
     // Private class variables.
     private Vector2 Movement;
     private Rigidbody2D RigidBody;
@@ -43,6 +46,11 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (!bCanMove)
+        {
+            return;
+        }
+
         // Handle character movement.
         RigidBody.MovePosition(RigidBody.position + Movement * MovementSpeed * Time.fixedDeltaTime);
     }

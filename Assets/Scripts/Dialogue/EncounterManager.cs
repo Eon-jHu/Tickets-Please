@@ -58,6 +58,9 @@ public class EncounterManager : MonoBehaviour
 
     public void StartEncounter(Dialogue _dialogue, ConversableObject _npc, EncounterState _eState)
     {
+        // Disable Player Movement
+        PlayerController.Instance.m_PlayerMovement.bCanMove = false;
+
         // Set the state
         m_EState = _eState;
 
@@ -181,6 +184,9 @@ public class EncounterManager : MonoBehaviour
         // End Dialogue
         m_DialogueManager.EndDialogue();
 
+        // Enable Player Movement
+        PlayerController.Instance.m_PlayerMovement.bCanMove = true;
+
         Debug.Log("The encounter ended with code " + m_EState);
     }
 
@@ -208,6 +214,8 @@ public class EncounterManager : MonoBehaviour
                 {
                     m_EState = EncounterState.Loss;
                     EndEncounter();
+
+                    Debug.Log("ENCOUNTER ENDED DUE TO TIMEOUT");
                 }
 
                 break;

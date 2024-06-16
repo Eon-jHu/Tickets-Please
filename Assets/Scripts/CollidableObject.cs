@@ -17,19 +17,6 @@ public class CollidableObject : MonoBehaviour
         Collider = GetComponentInChildren<Collider2D>(); // Get collider from game object.
     }
 
-    protected virtual void Update()
-    {
-        // Call overlap collider.
-        Collider.OverlapCollider(Filter, CollidedObjects);
-
-        foreach(var o in CollidedObjects)
-        {
-
-          OnCollided(o.gameObject);
-            
-        }
-    }
-
     protected virtual void OnCollided(GameObject _CollidedObject)
     {
         Debug.Log("Collided with " + _CollidedObject.name);

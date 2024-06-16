@@ -70,9 +70,9 @@ TagManager:
   - name: DialogueObjects
     uniqueID: 950187941
     locked: 0
+  - name: DialoguePlayer
+    uniqueID: 2820540219
+    locked: 0
   - name: UI
     uniqueID: 2081737059
-    locked: 0
-  - name: 
-    uniqueID: 2820540219
     locked: 0
