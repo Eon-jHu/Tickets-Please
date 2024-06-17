@@ -577,7 +577,8 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Still... I want to expose myself to things,
 
-    even if they are anxious.'
+    even if they make me
+    anxious.'
 --- !u!222 &635175314
 CanvasRenderer:
   m_ObjectHideFlags: 0

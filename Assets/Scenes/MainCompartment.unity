@@ -14059,8 +14059,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -30.817457, y: -0.9762143}
-  m_Size: {x: 1.5352287, y: 2.694105}
+  m_Offset: {x: -39.95736, y: -2.1922739}
+  m_Size: {x: 2.2717285, y: 2.9706702}
   m_Direction: 0
 --- !u!210 &1969178294
 SortingGroup:
@@ -16452,6 +16452,22 @@ PrefabInstance:
       value: Conductor...
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611103, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_Size.x
+      value: 1.6467514
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611103, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_Size.y
+      value: 3.223647
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611103, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_Offset.x
+      value: -19.618416
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611103, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_Offset.y
+      value: -1.8607965
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611103, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_IsTrigger
       value: 1
       objectReference: {fileID: 0}
@@ -16618,7 +16634,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_PlayerResponse
-      value: Nice weather we're having.
+      value: Nice weather we're having on this train.
       objectReference: {fileID: 0}
     - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_PlayerResponse
