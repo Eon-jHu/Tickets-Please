@@ -14727,8 +14727,8 @@ MonoBehaviour:
   m_text: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua.
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 94c58d90cf7802543a68d8730955647b, type: 2}
-  m_sharedMaterial: {fileID: -1110123205617866352, guid: 94c58d90cf7802543a68d8730955647b, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 9812483b3b8e2bb4d97681133de89ca6, type: 2}
+  m_sharedMaterial: {fileID: -7181021372517594207, guid: 9812483b3b8e2bb4d97681133de89ca6, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -14752,13 +14752,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 48
+  m_fontSize: 42
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 36
-  m_fontSizeMax: 48
-  m_fontStyle: 0
+  m_fontSizeMax: 42
+  m_fontStyle: 1
   m_HorizontalAlignment: 1
   m_VerticalAlignment: 256
   m_textAlignment: 65535

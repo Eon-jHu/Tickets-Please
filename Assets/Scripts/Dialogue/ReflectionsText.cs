@@ -14,9 +14,9 @@ public class ReflectionsText : MonoBehaviour
         "That was hard to understand... But I think that was good...",
         "That wasn't too bad...",
         "Some people are just like me too...",
-        "It's getting easier...",
+        "It's getting easier to talk...",
         "Talking is important... For everyone...",
-        "... I did it!"
+        "... Did I make a difference...?"
     };
 
     [SerializeField] private GameObject ReflectionsBox;
