@@ -16,7 +16,7 @@ public class FinishCondition : MonoBehaviour
             PlayerIsInFinalDoor = true;
 
             // If player has collected enough tickets.
-            if (TicketScore.TicketNumber >= 7)
+            if (TicketScore.TicketNumber >= 9)
             {
                 // Player can exit, load final scene.
                 SceneManager.LoadScene("OutroScene", LoadSceneMode.Single);
@@ -44,7 +44,7 @@ public class FinishCondition : MonoBehaviour
     protected void Update()
     {
 
-        if (TicketScore.TicketNumber < 7)
+        if (TicketScore.TicketNumber < 9)
         {
             TicketPromptText.SetActive(true);
         }

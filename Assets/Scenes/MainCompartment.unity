@@ -10175,7 +10175,7 @@ MonoBehaviour:
     - Ah...
     - How divine, that brazen beauty.
     - The one who sits upon that row of thrones.
-    - I gaze longing unto thee.
+    - I gaze longingly unto thee.
     m_TextSpeed: 0.05
     m_Responses:
     - m_PlayerResponse: Do you want to go up and talk to her?
@@ -16045,8 +16045,8 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[0]
-      value: I see. So perhaps my impatient at him is also reflected by his own impatient
-        at the one within.
+      value: I see. So perhaps my impatience at him is also reflected by his own
+        impatience at the one within.
       objectReference: {fileID: 0}
     - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[1]
@@ -16742,7 +16742,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[1]
-      value: Unless you meant my 'tickets'? I which case I do got 'em.
+      value: Unless you meant my 'tickets'? In which case I do got 'em.
       objectReference: {fileID: 0}
     - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[2]
