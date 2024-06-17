@@ -10205,8 +10205,10 @@ MonoBehaviour:
         m_TextSpeed: 0.05
       m_Success: 1
   m_TimeoutDialogue:
-    m_Name: 
-    m_Sentences: []
+    m_Name: FOREIGN MAN
+    m_Sentences:
+    - Ah... I should probably return to my seat.
+    - Here's my ticket, conductor, please think nothing of me.
     m_TextSpeed: 0.05
   dialogueManager: {fileID: 1530172866}
   SpeechBubble: {fileID: 710265304}
@@ -14890,7 +14892,7 @@ MonoBehaviour:
       m_ReplyToResponse:
         m_Name: LITTLE GIRL
         m_Sentences:
-        - Oh. I was just doing a social experiement to see how people would react.
+        - Oh. I was just doing a social experiment to see how people would react.
         - Sorry for the disturbance, train conductor.
         - You must be looking for my tickets.
         - Here you go.
@@ -14901,7 +14903,7 @@ MonoBehaviour:
         m_Name: LITTLE GIRL
         m_Sentences:
         - '*stops crying*'
-        - Oh. I was just doing a social experiement to see how people would react.
+        - Oh. I was just doing a social experiment to see how people would react.
         - Sorry for the disturbance, train conductor.
         - You must be looking for my tickets.
         - Here you go.
@@ -14912,7 +14914,7 @@ MonoBehaviour:
         m_Name: CRYING LITTLE GIRL
         m_Sentences:
         - '*stops crying*'
-        - Sorry. I was just doing a social experiement to see how people would react.
+        - Sorry. I was just doing a social experiment to see how people would react.
         - Sorry for the disturbance, train conductor.
         - Yes, my father is at home with my mother. I'm going to see them now.
         - Oh, you must be looking for my tickets.
@@ -14926,7 +14928,7 @@ MonoBehaviour:
         - '*Continues to cry but she opens her arms so you can hug her.*'
         - ...
         - '*stops crying*'
-        - Sorry. I was just doing a social experiement to see how people would react.
+        - Sorry. I was just doing a social experiment to see how people would react.
         - Sorry for the disturbance, train conductor. I did appreciate your offer.
         - Ah, you must be looking for my tickets.
         - Here you go.
@@ -15215,7 +15217,7 @@ MonoBehaviour:
   m_TimeoutDialogue:
     m_Name: SITTING GIRL
     m_Sentences:
-    - Oh, of course, my ticket!
+    - ... Oh, of course, my ticket!
     - Haha, I remember last time too, you came up to me and said,
     - '"Tickets, please!"'
     - I was feeling pretty down about myself until you came and talked to me.
@@ -16409,7 +16411,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[6]
-      value: And ask for my ticket.
+      value: And asked for my ticket.
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[7]
