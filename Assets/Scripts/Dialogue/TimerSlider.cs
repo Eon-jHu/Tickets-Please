@@ -58,7 +58,7 @@ public class TimerSlider : MonoBehaviour
 
 
             // Change volume based on closeness to 0;
-            audioManager.EarRinging.volume = (1.0f - (remainingTime / totalTime)) / 4;
+            audioManager.EarRinging.volume = (1.0f - (remainingTime / totalTime)) / 8;
             audioManager.HeartbeatSound.volume = 1.0f - (remainingTime / totalTime);
         }
         else

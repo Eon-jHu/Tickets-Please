@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -15,7 +16,8 @@ public class DialogueManager : MonoBehaviour
     private Dialogue m_CurrentDialogue = null;
     private string m_CurrentSentence = null;
     private bool m_IsTyping = false;
-    private ConversableObject CurrentNPC; // Reference to the current NPC for interaction.
+
+    public ConversableObject CurrentNPC {  get; private set; }
 
     public void StartDialogue(Dialogue _dialogue, ConversableObject _npc)
     {

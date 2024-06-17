@@ -202,6 +202,9 @@ public class EncounterManager : MonoBehaviour
         // Enable Player Movement
         PlayerController.Instance.m_PlayerMovement.bCanMove = true;
 
+        // Set Interaction Complete to TRUE
+        m_DialogueManager.CurrentNPC.NPCInteractionComplete = true;
+
         Debug.Log("The encounter ended with code " + m_EState);
     }
 

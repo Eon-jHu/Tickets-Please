@@ -6,15 +6,17 @@ using UnityEngine.UI;
 public class ReflectionsText : MonoBehaviour
 {
     // Sentences dependent on the number of tickets player has.
-    private string[] ReflectionSentences = new string[7]
+    private string[] ReflectionSentences = new string[9]
     {
-        "That could have gone better...",
-        "Argh. Why did I say that?",
-        "I guess... That wasn't too bad.",
+        "Aaaah... Why did I say that...",
         "I hope they don't think I was weird...",
-        "Yeah. I said the best thing I could.",
-        "Hmph. That was funny!",
-        "They definitely thought I was a good ticket collector!"
+        "I think... I could've been a bit nicer...",
+        "That was hard to understand... But I think that was good...",
+        "That wasn't too bad...",
+        "Some people are just like me too...",
+        "It's getting easier...",
+        "Talking is important... For everyone...",
+        "... I did it!"
     };
 
     [SerializeField] private GameObject ReflectionsBox;
@@ -47,8 +49,8 @@ public class ReflectionsText : MonoBehaviour
         // Display reflection sentence based on tickets collecteted.
         ReflectionText.text = ReflectionSentences[ReflectionSentencesIndex];
 
-        // Wait for 7 seconds before hiding reflection dialogr.
-        yield return new WaitForSeconds(4.0f);
+        // Wait for X seconds before hiding reflection dialogue.
+        yield return new WaitForSeconds(3.0f);
 
         // Hide reflections box again.
         ReflectionsBox.SetActive(false);

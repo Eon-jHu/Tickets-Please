@@ -32,6 +32,9 @@ public class RoomTransfer : MonoBehaviour
 
             // Moving the player to adjust for new room.
             _Collision.transform.position += PlayerChange;
+
+            // Door Opening Sound
+            AudioManager.Instance.DoorOpening.Play();
         }
     }
 }

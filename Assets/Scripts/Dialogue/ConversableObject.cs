@@ -11,10 +11,10 @@ public class ConversableObject : InteractableObject
     public Dialogue m_TimeoutDialogue;
 
     [NonSerialized]
-    public bool PlayerIsClose;
+    public bool PlayerIsClose = false;
 
-    // Private class variables.
-    private bool NPCInteractionComplete = false;
+    [NonSerialized]
+    public bool NPCInteractionComplete = false;
 
     // Serialised class variables.
     [SerializeField] private DialogueManager dialogueManager;
@@ -24,6 +24,11 @@ public class ConversableObject : InteractableObject
     // --------------- Functions --------------- //
     protected override void OnInteract()
     {
+        if (NPCInteractionComplete)
+        {
+            return;
+        }
+
         if (!HasInteracted)
         {
             // Ensure player is within ranger of the NPC before talking.
@@ -39,11 +44,8 @@ public class ConversableObject : InteractableObject
                 // Start Dialoguing
                 EncounterManager.Instance.StartEncounter(m_InitialDialogue, this, EncounterState.NPCTalking);
 
-                // Set interaction as complete.
-                NPCInteractionComplete = true;
-
-                // Add a ticket.
-                 // TicketScore.TicketNumber += 1;
+                // Speech Bubble Set to Disable
+                SpeechBubble.SetActive(false);
             }
         }
         // If alreading interacting, simulate "CONTINUE" button
@@ -78,16 +80,6 @@ public class ConversableObject : InteractableObject
         if (PlayerIsClose)
         {
             OnCollided();
-        }
-
-        // If NPC interaction is finished, hide the speech bubble.
-        if (NPCInteractionComplete)
-        {
-            SpeechBubble.SetActive(false);
-        }
-        else
-        {
-            // Do nothing, continue to show speech bubble.
         }
     }
 }

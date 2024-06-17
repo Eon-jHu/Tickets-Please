@@ -1145,6 +1145,90 @@ Transform:
   m_Father: {fileID: 1197542362}
   m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &213913274
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 213913275}
+  - component: {fileID: 213913276}
+  m_Layer: 3
+  m_Name: SpeechBubble
+  m_TagString: SpeechBubble
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &213913275
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213913274}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -41.56, y: -1.31, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1969178292}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &213913276
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 213913274}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -982655471
+  m_SortingLayer: 8
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6042e168d52ee3a499e365ad4ff5b3d6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12.8, y: 7.2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &220881184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1753,7 +1837,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -28.08, y: 5.7054176}
+  m_AnchoredPosition: {x: -37.9, y: 8.5}
   m_SizeDelta: {x: 3.4226, y: 0.6661}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!210 &293490969
@@ -1765,7 +1849,7 @@ SortingGroup:
   m_GameObject: {fileID: 293490967}
   m_Enabled: 1
   m_SortingLayerID: 837375885
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
 --- !u!114 &293490970
 MonoBehaviour:
@@ -1796,8 +1880,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
+    rgba: 4282752195
+  m_fontColor: {r: 0.764151, g: 0.6129833, b: 0.27033645, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -1901,6 +1985,90 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!1 &299652366
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299652367}
+  - component: {fileID: 299652368}
+  m_Layer: 3
+  m_Name: SpeechBubble
+  m_TagString: SpeechBubble
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &299652367
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299652366}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.342, y: 1.36, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 2064406965}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!212 &299652368
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299652366}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: -982655471
+  m_SortingLayer: 8
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: 6042e168d52ee3a499e365ad4ff5b3d6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 1
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 12.8, y: 7.2}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &339966295
 GameObject:
   m_ObjectHideFlags: 0
@@ -3143,6 +3311,9 @@ Transform:
   - {fileID: 1426497882}
   - {fileID: 1604347896}
   - {fileID: 2035208410}
+  - {fileID: 1969178292}
+  - {fileID: 1464593887}
+  - {fileID: 2064406965}
   m_Father: {fileID: 0}
   m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3328,7 +3499,7 @@ SortingGroup:
   m_GameObject: {fileID: 502655340}
   m_Enabled: 1
   m_SortingLayerID: 837375885
-  m_SortingLayer: 4
+  m_SortingLayer: 3
   m_SortingOrder: 0
 --- !u!1001 &504475115
 PrefabInstance:
@@ -4569,7 +4740,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 658596895}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -30.82, y: -0.84, z: 0}
+  m_LocalPosition: {x: -26.85, y: -0.16, z: 0}
   m_LocalScale: {x: 0.07, y: 0.07, z: 0.07}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -5311,7 +5482,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: faae050ef04a7e84c854a608270451d8, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -5947,7 +6118,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 24
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &881056132
 MonoBehaviour:
@@ -6552,6 +6723,134 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1019566690
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1019566691}
+  - component: {fileID: 1019566692}
+  m_Layer: 0
+  m_Name: DoorOpening
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1019566691
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019566690}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1706281636}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1019566692
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1019566690}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 8fb7ad6359cc3774d8e6c1e91fd50648, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1001 &1024370053
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7612,7 +7911,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1221766602}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.342, y: 1.36, z: 0}
+  m_LocalPosition: {x: 1.0679998, y: 1.2700001, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -8676,7 +8975,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1336239633}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 62.39, y: 2.6, z: 0}
+  m_LocalPosition: {x: 61.11, y: 2.57, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8710,7 +9009,7 @@ SortingGroup:
   m_GameObject: {fileID: 1336239633}
   m_Enabled: 1
   m_SortingLayerID: -1408195925
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
 --- !u!114 &1336239637
 MonoBehaviour:
@@ -8725,24 +9024,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InitialDialogue:
-    m_Name: CowGirl
+    m_Name: SUCCUBUS GIRL
     m_Sentences:
-    - (MOO)!
-    - Haha. Moo!
-    - Heh~
-    - (MOO)?
+    - Ueh.
+    - Oh, conductor!
+    - Uh, so actually, that dude over there has just been staring at me like, non-stop.
+    - It's kinda... Y'know?
+    - Can you ask him to stop? Taa~!
     m_TextSpeed: 0.05
     m_Responses:
-    - m_PlayerResponse: Oh! Haha, MOO!
+    - m_PlayerResponse: Maybe he wants to talk to you, but he doesn't know what to
+        say?
       m_ReplyToResponse:
-        m_Name: CowGirl (OFFENDED)
+        m_Name: SUCCUBUS GIRL
         m_Sentences:
-        - Moo...
-        m_TextSpeed: 0
+        - Talk... To me...?
+        - '*blushes*'
+        - '*hands over ticket while blushing*'
+        m_TextSpeed: 0.05
+      m_Success: 1
+    - m_PlayerResponse: Maybe he wants a fight?
+      m_ReplyToResponse:
+        m_Name: SUCCUBUS GIRL
+        m_Sentences:
+        - A fight... With me...?
+        - '*blushes*'
+        - '*hands over ticket while blushing*'
+        m_TextSpeed: 0.05
+      m_Success: 1
+    - m_PlayerResponse: Maybe he's looking for the bathrooms?
+      m_ReplyToResponse:
+        m_Name: SUCCUBUS GIRL
+        m_Sentences:
+        - Ah...
+        - Makes sense.
+        - I'll just tell him where the bathrooms are.
+        - You want my ticket?
+        m_TextSpeed: 0.05
       m_Success: 1
   m_TimeoutDialogue:
-    m_Name: 
-    m_Sentences: []
+    m_Name: SUCCUBUS GIRL
+    m_Sentences:
+    - ... Oh, he looked away.
+    - Maybe it was just me, being self-concious.
+    - Ah well.
+    - You looking for my ticket?
     m_TextSpeed: 0.05
   dialogueManager: {fileID: 1530172866}
   SpeechBubble: {fileID: 1191784544}
@@ -9381,7 +9707,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -836, y: 444}
+  m_AnchoredPosition: {x: -60, y: 482}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1398998251
@@ -9410,7 +9736,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1398998251}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 2.41, y: -0.09, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -9795,7 +10121,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1426497881}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 54.83, y: 2.37, z: 0}
+  m_LocalPosition: {x: 69.39, y: 0.42, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9829,7 +10155,7 @@ SortingGroup:
   m_GameObject: {fileID: 1426497881}
   m_Enabled: 1
   m_SortingLayerID: -1408195925
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
 --- !u!114 &1426497885
 MonoBehaviour:
@@ -9844,20 +10170,39 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InitialDialogue:
-    m_Name: GreekGuy
+    m_Name: FOREIGN MAN
     m_Sentences:
-    - I am greek.
-    - Lmfao.
-    - So anyway...
-    - Any chance i could get some greek salad?
+    - Ah...
+    - How divine, that brazen beauty.
+    - The one who sits upon that row of thrones.
+    - I gaze longing unto thee.
     m_TextSpeed: 0.05
     m_Responses:
-    - m_PlayerResponse: No sir this is a 12 hour train.
+    - m_PlayerResponse: Do you want to go up and talk to her?
       m_ReplyToResponse:
-        m_Name: GreekGuy (HURT)
+        m_Name: FOREIGN MAN
         m_Sentences:
-        - Ah... I don't mind warm salad...
-        m_TextSpeed: 0
+        - Talk...
+        - I'm no good at talking...
+        - But I suppose, if I never talk, she may never know how I feel...
+        - I...
+        - I will go! Thank you, conductor.
+        - I depart my ticket, for you.
+        m_TextSpeed: 0.05
+      m_Success: 1
+    - m_PlayerResponse: Can you return to your seat?
+      m_ReplyToResponse:
+        m_Name: FOREIGN MAN
+        m_Sentences:
+        - Oh! You have given me a cruel and timely ultimatum!
+        - To return and depart to whence I came, or to advance and beseige this opportunity!
+        - Yes, I shall make 'my seat' be that of one next to hers!
+        - Yet, alas, I'm no good at talking...
+        - But I suppose, if I never talk, she may never know how I feel...
+        - I...
+        - I will go! Thank you, conductor, for your timely counsel!
+        - I depart my ticket, for you.
+        m_TextSpeed: 0.05
       m_Success: 1
   m_TimeoutDialogue:
     m_Name: 
@@ -10184,6 +10529,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c7ffa7d75c9d54c4c862ef962461a176, type: 3}
+--- !u!4 &1464593887 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6254200932595611096, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+  m_PrefabInstance: {fileID: 6254200933982744315}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1472970728 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3637840226394217053, guid: dfb5be164cd4f91488be9a742571c568, type: 3}
@@ -10695,6 +11045,117 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!1 &1554181705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1554181706}
+  - component: {fileID: 1554181708}
+  - component: {fileID: 1554181707}
+  m_Layer: 3
+  m_Name: CowGirlNPC
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1554181706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554181705}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -40.02, y: -2.04, z: 0}
+  m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 1969178292}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!61 &1554181707
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554181705}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.040884018, y: -1.1999063}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.12, y: 5.12}
+    newSize: {x: 3, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3.1659966, y: 2.0797691}
+  m_EdgeRadius: 0
+--- !u!212 &1554181708
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1554181705}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 21300000, guid: 11a68cafd3036524b853b585443c1921, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3, y: 3}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &1557487157
 GameObject:
   m_ObjectHideFlags: 0
@@ -10813,7 +11274,7 @@ Transform:
   - {fileID: 1681328302}
   - {fileID: 242218592}
   m_Father: {fileID: 0}
-  m_RootOrder: 23
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1558308949
 PrefabInstance:
@@ -10926,8 +11387,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.06790912, y: -0.42443287}
-  m_Size: {x: 1.4507287, y: 3.1051862}
+  m_Offset: {x: 2.3996124, y: -0.39128065}
+  m_Size: {x: 1.4728317, y: 3.727179}
   m_Direction: 0
 --- !u!210 &1604347898
 SortingGroup:
@@ -10938,7 +11399,7 @@ SortingGroup:
   m_GameObject: {fileID: 1604347895}
   m_Enabled: 1
   m_SortingLayerID: -1408195925
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
 --- !u!114 &1604347899
 MonoBehaviour:
@@ -10953,22 +11414,51 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InitialDialogue:
-    m_Name: Samurai
+    m_Name: SAMURAI
     m_Sentences:
-    - JAPANESE
-    - Japyap
+    - "\u8CB4\u6BBF\u3001\u6B64\u306E\u5217\u8ECA\u306E\u4E3B\u3088\u3002\u62D9\u8005\u306E\u5207\u7B26\u3092\u304A\u6C42\u3081\u304B\u3001\u5DE6\u69D8\u3067\u3042\u308D\u3046\u304B\uFF1F"
+    - "\u62D9\u8005\u304C\u5207\u7B26\u3092\u304A\u898B\u305B\u3059\u308B\u524D\u306B\u3001\u4E00\u3064\u306E\u554F\u3044\u306B\u7B54\u3048\u3066\u3044\u305F\u3060\u304D\u305F\u3044\u3002"
+    - "\u305D\u308C\u306F\u81F3\u6975\u91CD\u8981\u306A\u554F\u3044\u3067\u3042\u308B\u3002\u8CB4\u6BBF\u306E\u771F\u306E\u59FF\u3092\u660E\u304B\u3059\u3082\u306E\u306A\u308A\u3002"
+    - "\u8449\u306E\u552F\u4E00\u306E\u5F79\u5272\u306F\u5730\u306B\u843D\u3061\u308B\u3053\u3068\u306A\u306E\u304B\uFF1F"
     m_TextSpeed: 0.05
     m_Responses:
-    - m_PlayerResponse: JAPANEsEE!!
+    - m_PlayerResponse: Yes.
       m_ReplyToResponse:
-        m_Name: Samurai (DISHONOURED)
+        m_Name: SAMURAI
         m_Sentences:
-        - Jap...a. nese...
-        m_TextSpeed: 0
-      m_Success: 1
+        - "\u306A\u308B\u307B\u3069\u3002\u8CB4\u6BBF\u306F\u5168\u3066\u304C\u904B\u547D\u306B\u5F93\u3044\u7D42\u7109\u3078\u5411\u304B\u3046\u3082\u306E\u3068\u898B\u3066\u304A\u3089\u308C\u308B\u306E\u3060\u306A\u3002\u78BA\u304B\u306B\u3001\u5404\u3005\u306E\u8449\u306F\u6700\u5F8C\u306B\u306F\u843D\u3061\u308B\u5B9A\u3081\u3092\u6301\u3064\u3002"
+        - "\u554F\u3044\u306B\u304A\u7B54\u3048\u3044\u305F\u3060\u304D\u611F\u8B1D\u3044\u305F\u3059\u3002\u62D9\u8005\u306E\u5207\u7B26\u3092\u304A\u898B\u305B\u3057\u3088\u3046\u3002"
+        m_TextSpeed: 0.05
+      m_Success: 0
+    - m_PlayerResponse: No.
+      m_ReplyToResponse:
+        m_Name: SAMURAI
+        m_Sentences:
+        - "\u306A\u308B\u307B\u3069\u3002\u8CB4\u6BBF\u306F\u4E16\u754C\u3092\u7121\u9650\u306E\u53EF\u80FD\u6027\u304C\u3042\u308A\u3001\u610F\u5473\u306F\u7D42\u7109\u306E\u307F\u306A\u3089\u305A\u3001\u305D\u308C\u4EE5\u4E0A\u306E\u3082\u306E\u304B\u3089\u751F\u307E\u308C\u308B\u3068\u898B\u3066\u304A\u3089\u308C\u308B\u306E\u3060\u306A\u3002"
+        - "\u554F\u3044\u306B\u304A\u7B54\u3048\u3044\u305F\u3060\u304D\u611F\u8B1D\u3044\u305F\u3059\u3002\u62D9\u8005\u306E\u5207\u7B26\u3092\u304A\u898B\u305B\u3057\u3088\u3046\u3002"
+        m_TextSpeed: 0.05
+      m_Success: 0
+    - m_PlayerResponse: There is no meaning here.
+      m_ReplyToResponse:
+        m_Name: SAMURAI
+        m_Sentences:
+        - "\u306A\u308B\u307B\u3069\u3002\u8CB4\u6BBF\u306F\u610F\u5473\u3082\u904B\u547D\u3082\u91CD\u8981\u3067\u306F\u306A\u304F\u3001\u65E5\u3005\u306E\u751F\u304D\u65B9\u3053\u305D\u304C\u6211\u3005\u306B\u3068\u3063\u3066\u91CD\u8981\u3067\u3042\u308B\u3068\u898B\u3066\u304A\u3089\u308C\u308B\u306E\u3060\u306A\u3002\u3053\u308C\u3053\u305D\u304C\u5B58\u5728\u306E\u771F\u7406\u3067\u3042\u308B\u3002"
+        - "\u554F\u3044\u306B\u304A\u7B54\u3048\u3044\u305F\u3060\u304D\u611F\u8B1D\u3044\u305F\u3059\u3002\u62D9\u8005\u306E\u5207\u7B26\u3092\u304A\u898B\u305B\u3057\u3088\u3046\u3002"
+        m_TextSpeed: 0.05
+      m_Success: 0
+    - m_PlayerResponse: ...Ticket?
+      m_ReplyToResponse:
+        m_Name: SAMURAI
+        m_Sentences:
+        - "\u3053\u308C\u306F\u5931\u793C\u3092\u3002\u3069\u3046\u3084\u3089\u8CB4\u6BBF\u306B\u306F\u62D9\u8005\u306E\u554F\u3044\u306B\u7B54\u3048\u308B\u304A\u6642\u9593\u304C\u306A\u3044\u3088\u3046\u3060\u3002\u3044\u305A\u308C\u306E\u65E5\u306B\u304B\u307E\u305F\u7B54\u3048\u3066\u3044\u305F\u3060\u3051\u308C\u3070\u5E78\u3044\u306B\u5B58\u305A\u308B\u3002"
+        - "\u62D9\u8005\u306E\u5207\u7B26\u3092\u304A\u898B\u305B\u3057\u3088\u3046\u3002"
+        m_TextSpeed: 0.05
+      m_Success: 0
   m_TimeoutDialogue:
-    m_Name: 
-    m_Sentences: []
+    m_Name: SAMURAI
+    m_Sentences:
+    - "\u306A\u308B\u307B\u3069\u3002\u8CB4\u6BBF\u306E\u6C88\u9ED9\u305D\u306E\u3082\u306E\u304C\u4E00\u3064\u306E\u7B54\u3048\u3067\u3042\u308B\u3068\u3082\u8A00\u3048\u308B\u3002\u8CB4\u6BBF\u306E\u76EE\u306B\u306F\u76EE\u7684\u3084\u904B\u547D\u306F\u5B58\u5728\u3057\u306A\u3044\u3002\u5168\u3066\u306E\u771F\u7406\u306F\u6642\u306E\u6D41\u308C\u306E\u4E2D\u3067\u660E\u3089\u304B\u306B\u3055\u308C\u308B\u306E\u3060\u306A\u3002"
+    - "\u554F\u3044\u306B\u304A\u7B54\u3048\u3044\u305F\u3060\u304D\u611F\u8B1D\u3044\u305F\u3059\u3002\u62D9\u8005\u306E\u5207\u7B26\u3092\u304A\u898B\u305B\u3057\u3088\u3046\u3002"
     m_TextSpeed: 0.05
   dialogueManager: {fileID: 1530172866}
   SpeechBubble: {fileID: 1221766602}
@@ -11977,6 +12467,7 @@ Transform:
   - {fileID: 1780363815}
   - {fileID: 785982604}
   - {fileID: 2138368251}
+  - {fileID: 1019566691}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12517,7 +13008,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1789280462}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -32.12, y: 0.66, z: 0}
+  m_LocalPosition: {x: -28.149998, y: 1.3399999, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_ConstrainProportionsScale: 1
   m_Children: []
@@ -13519,6 +14010,153 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1953258914}
   m_CullTransparentMesh: 1
+--- !u!1 &1969178291
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1969178292}
+  - component: {fileID: 1969178295}
+  - component: {fileID: 1969178294}
+  - component: {fileID: 1969178293}
+  m_Layer: 3
+  m_Name: Android
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1969178292
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969178291}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 69.41, y: 2.6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1554181706}
+  - {fileID: 213913275}
+  m_Father: {fileID: 494676627}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &1969178293
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969178291}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -30.817457, y: -0.9762143}
+  m_Size: {x: 1.5352287, y: 2.694105}
+  m_Direction: 0
+--- !u!210 &1969178294
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969178291}
+  m_Enabled: 1
+  m_SortingLayerID: -1408195925
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+--- !u!114 &1969178295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1969178291}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc1f849193e53147b7491e0a590e840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InitialDialogue:
+    m_Name: ANDROID
+    m_Sentences:
+    - Beep boop.
+    - Beep beep boop boop.
+    - Beep beep boop boop beep, beep boop boop boop beep, boop beep boop boop boop
+      beep beep beep wee woo.
+    - Boop.
+    m_TextSpeed: 0.05
+    m_Responses:
+    - m_PlayerResponse: ... Beep?
+      m_ReplyToResponse:
+        m_Name: ANDROID
+        m_Sentences:
+        - Sorry, my languange simulation module was not operating correctly due to
+          an internal error. What you have said is irrelevant but I can recognise
+          your implicit meaning.
+        - Here is my certificate of identification within this train-
+        - My ticket.
+        m_TextSpeed: 0.05
+      m_Success: 1
+    - m_PlayerResponse: '*nod**nod**nod*'
+      m_ReplyToResponse:
+        m_Name: ANDROID
+        m_Sentences:
+        - Sorry, my languange simulation module was not operating correctly due to
+          an internal error.
+        - Here is my certificate of identification within this train-
+        - My ticket.
+        m_TextSpeed: 0.05
+      m_Success: 1
+    - m_PlayerResponse: Are you malfunctioning?
+      m_ReplyToResponse:
+        m_Name: ANDROID
+        m_Sentences:
+        - ... *bzzt*
+        - Your hypothesis was indeed correct! My languange simulation module was
+          not operating correctly due to an internal error.
+        - I was looking for you to release my certificate of identification within
+          this train-
+        - My ticket.
+        m_TextSpeed: 0.05
+      m_Success: 0
+    - m_PlayerResponse: How do your arms float like that?
+      m_ReplyToResponse:
+        m_Name: ANDROID
+        m_Sentences:
+        - ... *bzzt*
+        - Sorry, my languange simulation module was not operating correctly due to
+          an internal error.
+        - My arms float due to a magnetic device located within my shoulder modules
+          that continuously ocillate between electromagnetic attraction and repulsion,
+        - simulating the physical phenomenon of levitation.
+        - On another note, I was looking for you to release my certificate of identification
+          within this train-
+        - My ticket. Will you accept it?
+        m_TextSpeed: 0.05
+      m_Success: 0
+  m_TimeoutDialogue:
+    m_Name: ANDROID
+    m_Sentences:
+    - ... *bzzt*
+    - Sorry, my languange simulation module was not operating correctly due to an
+      internal error.
+    - Thank you for giving me some time to diagnose and fix it.
+    - Judging from the 38 unique visual stimuli I have sensed about you, you must
+      be the train conductor.
+    - ' I was looking for you to release my certificate of identification within
+      this train. My ticket.'
+    m_TextSpeed: 0.05
+  dialogueManager: {fileID: 1530172866}
+  SpeechBubble: {fileID: 213913274}
 --- !u!1001 &1974103282
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -13754,7 +14392,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -1.1111374, y: -0.7838758}
+  m_AnchoredPosition: {x: -1.1111374, y: -0.82}
   m_SizeDelta: {x: 3.4226, y: 0.7564}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!210 &2014991753
@@ -13765,8 +14403,8 @@ SortingGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2014991751}
   m_Enabled: 1
-  m_SortingLayerID: 837375885
-  m_SortingLayer: 4
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!114 &2014991754
 MonoBehaviour:
@@ -14213,8 +14851,8 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -30.817457, y: -0.9762143}
-  m_Size: {x: 1.5352287, y: 2.694105}
+  m_Offset: {x: -26.872343, y: -0.34632254}
+  m_Size: {x: 1.5131264, y: 2.8392167}
   m_Direction: 0
 --- !u!210 &2035208412
 SortingGroup:
@@ -14225,7 +14863,7 @@ SortingGroup:
   m_GameObject: {fileID: 2035208409}
   m_Enabled: 1
   m_SortingLayerID: -1408195925
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
 --- !u!114 &2035208413
 MonoBehaviour:
@@ -14240,24 +14878,66 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_InitialDialogue:
-    m_Name: SchoolGirl
+    m_Name: CRYING LITTLE GIRL
     m_Sentences:
-    - I am in school.
-    - Homework haha
-    - lmao
-    - tehe
+    - '*sobs*'
+    - WaaaaaaAAAAAAAA!
+    - I want my mommy!
+    - WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
     m_TextSpeed: 0.05
     m_Responses:
-    - m_PlayerResponse: ERM WHAT
+    - m_PlayerResponse: Why are you crying?
       m_ReplyToResponse:
-        m_Name: SchoolGirl (HAPPY)
+        m_Name: LITTLE GIRL
         m_Sentences:
-        - alg bruv
-        m_TextSpeed: 0
+        - Oh. I was just doing a social experiement to see how people would react.
+        - Sorry for the disturbance, train conductor.
+        - You must be looking for my tickets.
+        - Here you go.
+        m_TextSpeed: 0.05
+      m_Success: 0
+    - m_PlayerResponse: Please stop crying.
+      m_ReplyToResponse:
+        m_Name: LITTLE GIRL
+        m_Sentences:
+        - '*stops crying*'
+        - Oh. I was just doing a social experiement to see how people would react.
+        - Sorry for the disturbance, train conductor.
+        - You must be looking for my tickets.
+        - Here you go.
+        m_TextSpeed: 0.05
+      m_Success: 0
+    - m_PlayerResponse: Well at least your dad's around, right?
+      m_ReplyToResponse:
+        m_Name: CRYING LITTLE GIRL
+        m_Sentences:
+        - '*stops crying*'
+        - Sorry. I was just doing a social experiement to see how people would react.
+        - Sorry for the disturbance, train conductor.
+        - Yes, my father is at home with my mother. I'm going to see them now.
+        - Oh, you must be looking for my tickets.
+        - Here you go.
+        m_TextSpeed: 0.05
+      m_Success: 0
+    - m_PlayerResponse: Would it be weird if I offered you a hug?
+      m_ReplyToResponse:
+        m_Name: LITTLE GIRL
+        m_Sentences:
+        - '*Continues to cry but she opens her arms so you can hug her.*'
+        - ...
+        - '*stops crying*'
+        - Sorry. I was just doing a social experiement to see how people would react.
+        - Sorry for the disturbance, train conductor. I did appreciate your offer.
+        - Ah, you must be looking for my tickets.
+        - Here you go.
+        m_TextSpeed: 0.05
       m_Success: 1
   m_TimeoutDialogue:
-    m_Name: 
-    m_Sentences: []
+    m_Name: CRYING LITTLE GIRL
+    m_Sentences:
+    - '*cries harder*'
+    - WAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA!
+    - '*she holds out her hand to give you her ticket while she''s crying*'
     m_TextSpeed: 0.05
   dialogueManager: {fileID: 1530172866}
   SpeechBubble: {fileID: 1789280462}
@@ -14289,7 +14969,7 @@ RectTransform:
   m_GameObject: {fileID: 2042215043}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.8, y: 0.8, z: 0.8}
+  m_LocalScale: {x: 0.4, y: 0.4, z: 0.4}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1389106154}
@@ -14437,6 +15117,223 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 7.7355146, y: 0.97107434}
   m_EdgeRadius: 0
+--- !u!1 &2064406964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2064406965}
+  - component: {fileID: 2064406968}
+  - component: {fileID: 2064406967}
+  - component: {fileID: 2064406966}
+  m_Layer: 3
+  m_Name: LastGirl
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2064406965
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064406964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 75.72, y: 2.69, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 1
+  m_Children:
+  - {fileID: 2093750357}
+  - {fileID: 299652367}
+  m_Father: {fileID: 494676627}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!70 &2064406966
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064406964}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0040438175, y: -0.42443287}
+  m_Size: {x: 1.5946345, y: 3.1051862}
+  m_Direction: 0
+--- !u!210 &2064406967
+SortingGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064406964}
+  m_Enabled: 1
+  m_SortingLayerID: -1408195925
+  m_SortingLayer: 4
+  m_SortingOrder: 0
+--- !u!114 &2064406968
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2064406964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1bc1f849193e53147b7491e0a590e840, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_InitialDialogue:
+    m_Name: SITTING GIRL
+    m_Sentences:
+    - Oh, are you the conductor?
+    - What can I do for you?
+    m_TextSpeed: 0.05
+    m_Responses:
+    - m_PlayerResponse: Tickets, please.
+      m_ReplyToResponse:
+        m_Name: SITTING GIRL
+        m_Sentences:
+        - Oh, of course!
+        - Haha, I remember last time too, you came up to me and said,
+        - '"Tickets, please!" really loudly!'
+        - I was so surprised!
+        - ... I had been feeling pretty down about myself until you came and talked
+          to me.
+        - Thank you.
+        m_TextSpeed: 0.05
+      m_Success: 1
+  m_TimeoutDialogue:
+    m_Name: SITTING GIRL
+    m_Sentences:
+    - Oh, of course, my ticket!
+    - Haha, I remember last time too, you came up to me and said,
+    - '"Tickets, please!"'
+    - I was feeling pretty down about myself until you came and talked to me.
+    - Thank you.
+    m_TextSpeed: 0.05
+  dialogueManager: {fileID: 1530172866}
+  SpeechBubble: {fileID: 299652366}
+--- !u!1 &2093750356
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2093750357}
+  - component: {fileID: 2093750359}
+  - component: {fileID: 2093750358}
+  m_Layer: 3
+  m_Name: GreekGuyNPC
+  m_TagString: Player
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2093750357
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093750356}
+  m_LocalRotation: {x: 0, y: 0, z: 0.10374729, w: 0.9946037}
+  m_LocalPosition: {x: 0.17, y: -0.25, z: 0}
+  m_LocalScale: {x: -0.5, y: 0.5, z: 0.5}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2064406965}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 11.91}
+--- !u!61 &2093750358
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093750356}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.58981055, y: -0.44051743}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.12, y: 5.12}
+    newSize: {x: 3, y: 3}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 2.1570463, y: 4.1647997}
+  m_EdgeRadius: 0
+--- !u!212 &2093750359
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2093750356}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 10
+  m_Sprite: {fileID: 21300000, guid: b356f1c715f063d4b8a2882c509d2619, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 3, y: 3}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
 --- !u!1 &2116529961
 GameObject:
   m_ObjectHideFlags: 0
@@ -14554,6 +15451,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   HeartbeatSound: {fileID: 785982605}
   EarRinging: {fileID: 2138368252}
+  DoorOpening: {fileID: 1019566692}
 --- !u!1 &2138368250
 GameObject:
   m_ObjectHideFlags: 0
@@ -14597,7 +15495,7 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 673eb7e91dc87d34db40f606b04bb91d, type: 3}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 1
@@ -14896,6 +15794,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 494676627}
     m_Modifications:
+    - target: {fileID: 4010866479615426417, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.23000121
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866479615426417, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0.9100001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696776, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_Size.x
+      value: 1.6899796
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696776, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_Size.y
+      value: 3.5907056
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696776, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_Offset.x
+      value: -1.3726273
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696776, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.41773856
+      objectReference: {fileID: 0}
     - target: {fileID: 4010866480914696778, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
       propertyPath: m_Name
       value: Redneck
@@ -14954,55 +15876,222 @@ PrefabInstance:
       objectReference: {fileID: 1530172866}
     - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
       propertyPath: m_InitialDialogue.m_Name
-      value: Redneck
+      value: IMPATIENT SAGE
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Name
+      value: PATIENT SAGE
       objectReference: {fileID: 0}
     - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.size
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[0]
-      value: Wassah
+      value: Young one. Good you came.
       objectReference: {fileID: 0}
     - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[1]
-      value: Crazy world we live in
+      value: That man has been standing in front of the door for a while.
       objectReference: {fileID: 0}
     - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[2]
-      value: it's a maaaad world.
+      value: And he has not spoken a word to me.
       objectReference: {fileID: 0}
     - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[3]
-      value: HERES MY TICKET JEZEBEL
+      value: I would like to relinquish myself in the bathroom.
       objectReference: {fileID: 0}
     - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[4]
-      value: What do you think of cats?
+      value: Can you ask him to move?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[0]
+      value: I see. You have stayed silent so I may have time to reflect on my own
+        impatience.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[1]
+      value: I have realized my behaviour is foolish. I apologize.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[2]
+      value: Here is my ticket. I will ponder more about how to approach this man.
       objectReference: {fileID: 0}
     - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_Success
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
-      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_PlayerResponse
-      value: AHHHH
-      objectReference: {fileID: 0}
-    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
-      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Name
-      value: Redneck (HAPPY)
-      objectReference: {fileID: 0}
-    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
-      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.size
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_Success
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_Success
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_Success
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_PlayerResponse
+      value: That's the exit.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_PlayerResponse
+      value: If you open that door, you will die.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_PlayerResponse
+      value: Perhaps he is also waiting for one who is within.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_PlayerResponse
+      value: Have you tried talking to him?
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Name
+      value: PATIENT SAGE
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Name
+      value: PATIENT SAGE
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Name
+      value: PATIENT SAGE
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Name
+      value: PATIENT SAGE
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[0]
-      value: Same that's so legit.
+      value: I see. So the bathrooms were indeed at another location.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: Perhaps I've been standing here so long that I forgot there was more
+        than one way to go to achieve my goal.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[2]
+      value: Thank you for your insightful words.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[3]
+      value: Here is my ticket. I will ponder this a bit longer before going to relieve
+        myself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[0]
+      value: I see. So that must mean the bathrooms were indeed at another location.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: Perhaps I've been standing here so long that I forgot there was more
+        than one way to go to achieve my goal.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[2]
+      value: Thank you for your insightful words.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[3]
+      value: Here is my ticket. I will ponder this a bit longer before going to relieve
+        myself.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[0]
+      value: I see. So perhaps my impatient at him is also reflected by his own impatient
+        at the one within.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: This cycle of impatience will continue unto infinity.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[2]
+      value: We must break it at once. I ought not to be impatient, but only to wait.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[3]
+      value: Thank you for your insightful words.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[4]
+      value: Here is my ticket. I will stand vigilantly and wait on.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[0]
+      value: I... Have not. Perhaps discourse is a wiser first course of action than
+        aggravation.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: I apologize for my foolish behaviour.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[2]
+      value: And thank you for your insightful words.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[3]
+      value: Here is my ticket. I will ponder about how to approach this man.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480914696782, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[4]
+      value: Here is my ticket. I will stand vigilantly and wait on.
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480957660124, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.47
+      objectReference: {fileID: 0}
+    - target: {fileID: 4010866480957660124, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.28
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af01b3097e2062949aca0df6d18f0ab4, type: 3}
@@ -15068,11 +16157,11 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 494676627}
     m_Modifications:
     - target: {fileID: 6254200932595611096, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_RootOrder
-      value: 22
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611096, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_LocalPosition.x
@@ -15092,15 +16181,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611096, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611096, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611096, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611096, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -15128,47 +16217,259 @@ PrefabInstance:
       objectReference: {fileID: 1530172866}
     - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_InitialDialogue.m_Name
-      value: Rem
+      value: STRANGE LADY
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Name
+      value: STRANGE LADY
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.size
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.size
-      value: 2
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.size
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[0]
-      value: I hunger and I thirst for Bagel in physical and smoothie form.
+      value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[1]
-      value: Can you PLEASE help me with that?
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[2]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[3]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[4]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[5]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[0]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[1]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[2]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[3]
+      value: Here is my ticket.
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_Success
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
-      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_PlayerResponse
-      value: Errrm... i don't think so...
-      objectReference: {fileID: 0}
-    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
-      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Name
-      value: Rem (ANGRY)
-      objectReference: {fileID: 0}
-    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
-      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.size
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_Success
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_Success
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_Success
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_PlayerResponse
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_PlayerResponse
+      value: Nice!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_PlayerResponse
+      value: So yesterday I had this crazy dream-
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_PlayerResponse
+      value: Crickets, please!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Name
+      value: STRANGE LADY
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Name
+      value: STRANGE LADY
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Name
+      value: STRANGE LADY
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Name
+      value: STRANGE LADY
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.size
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.size
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[0]
-      value: FFS RRAAAAGHHHHH
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[2]
+      value: Here is my ticket.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[0]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[2]
+      value: Thank you...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[3]
+      value: Here is my ticket.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[0]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[2]
+      value: A dream...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[3]
+      value: I had a dream once...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[4]
+      value: I dreamt that I was riding this train...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[5]
+      value: And someone came over to talk to me...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[6]
+      value: And ask for my ticket.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[7]
+      value: And I gave it to them.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[0]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[2]
+      value: ... Crickets...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[3]
+      value: My farm...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[4]
+      value: Was filled with crickets...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[5]
+      value: I remember them all...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[6]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[7]
+      value: Here is my ticket...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200932595611101, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[8]
+      value: Conductor...
       objectReference: {fileID: 0}
     - target: {fileID: 6254200932595611103, guid: 045c848867a494244a6ae9f59204793e, type: 3}
       propertyPath: m_IsTrigger
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200933567551056, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -20.79073
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200933567551056, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.15888703
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200933682092301, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -19.59
+      objectReference: {fileID: 0}
+    - target: {fileID: 6254200933682092301, guid: 045c848867a494244a6ae9f59204793e, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.56
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 045c848867a494244a6ae9f59204793e, type: 3}
@@ -15236,24 +16537,220 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1530172866}
     - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
-      propertyPath: m_InitialDialogue.m_Sentences.Array.size
+      propertyPath: m_InitialDialogue.m_Name
+      value: ANGRY MOB BOSS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Name
+      value: ANGRY MOB BOSS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.size
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.size
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[0]
-      value: ...Oh huh? What did you say?
-      objectReference: {fileID: 0}
-    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
-      propertyPath: m_InitialDialogue.m_Sentences.Array.data[1]
-      value: Oh my ticket. Sure.
-      objectReference: {fileID: 0}
-    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
-      propertyPath: m_InitialDialogue.m_Sentences.Array.data[2]
       value: ...
       objectReference: {fileID: 0}
     - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[1]
+      value: .....
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[2]
+      value: Whaddya want, kid? Cause you're lookin' at me funny.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[3]
-      value: Could you let me know where the bathrooms are?
+      value: Just so you know, I don't do shady business on this train.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[4]
+      value: Not unless it's a good price, that is.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[5]
+      value: Or it's for somebody I hate.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[0]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[1]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[2]
+      value: You're the train conductor, aren't you?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[3]
+      value: You lookin' for tickets?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[4]
+      value: Here you go.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_Success
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_Success
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_Success
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_Success
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_PlayerResponse
+      value: Nice weather we're having.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_PlayerResponse
+      value: You come here often.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_PlayerResponse
+      value: Can I see your biscuits?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_PlayerResponse
+      value: I'm looking at you, but it's not funny, ha ha.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Name
+      value: THOUGHTFUL MOB BOSS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Name
+      value: THOUGHTFUL MOB BOSS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Name
+      value: MOB BOSS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Name
+      value: MOB BOSS
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[0]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: If you meant "nothing at all", then I suppose.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[2]
+      value: It's better than home.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[3]
+      value: You're lookin' for my ticket, aren't you?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[4]
+      value: Here. Take it. And get lost.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[0]
+      value: No.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: First time, actually.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[2]
+      value: It's a nice train.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[3]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[4]
+      value: You lookin' for my ticket? Here it is.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[0]
+      value: I don't got any.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: Unless you meant my 'tickets'? I which case I do got 'em.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[2].m_ReplyToResponse.m_Sentences.Array.data[2]
+      value: Right here.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[0]
+      value: ...
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: Heh.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[2]
+      value: First time I've heard that.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[3]
+      value: You're the conductor, right? You lookin' for tickets?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6279151711221778021, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[3].m_ReplyToResponse.m_Sentences.Array.data[4]
+      value: Got 'em right here.
       objectReference: {fileID: 0}
     - target: {fileID: 6279151711221778023, guid: f48f2fdb1279f254f9f3d28e166f3a36, type: 3}
       propertyPath: m_Name
@@ -15710,11 +17207,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_TimeoutDialogue.m_Name
-      value: LINCOLN (Disappointed)
+      value: LINCOLN (Stressed)
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.size
-      value: 6
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_TimeoutDialogue.m_Sentences.Array.size
@@ -15722,38 +17219,78 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[0]
-      value: Hey. Amelio.
+      value: There you are, Amelio.
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[1]
-      value: It's been like two hours, lass. Are you alright? It's nigh time to check
-        on the passengers.
+      value: It's been like two hours, lass. Are you alright?
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[2]
-      value: There could potentially be illegal immigrants on board, or worse, sussy
-        bakas.
+      value: It's nigh time to check on the passengers.
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[3]
-      value: Don't make me regret hiring you. If you do, I'll have to star rail you.
+      value: We ought not have any Divergent Timeline stragglers on board, ought
+        we?
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[4]
-      value: Do you understand?
+      value: The Time-Rail company will have our heads...
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_InitialDialogue.m_Sentences.Array.data[5]
-      value: After you finish talking to me you'll see a ticket number on the top-right
-        hand side of your screen!
+      value: Use your Ticket Collector to get their tickets. It should automatically
+        check if their tickets are from the right timeline.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_InitialDialogue.m_Sentences.Array.data[6]
+      value: Alright?
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[0]
-      value: ... Tsk.
+      value: Alright, Amelio.
       objectReference: {fileID: 0}
     - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_TimeoutDialogue.m_Sentences.Array.data[1]
-      value: Just get to it.
+      value: Get to it please.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_PlayerResponse
+      value: Do I really have to go?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Name
+      value: LINCOLN (Relieved)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Name
+      value: LINCOLN (Stressed)
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_TextSpeed
+      value: 0.05
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[0]
+      value: Good lass.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[0].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: Get going now.
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[0]
+      value: I would go for you lass, but you said you wanted to do this, did you
+        not?
+      objectReference: {fileID: 0}
+    - target: {fileID: 6802786733099755467, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
+      propertyPath: m_InitialDialogue.m_Responses.Array.data[1].m_ReplyToResponse.m_Sentences.Array.data[1]
+      value: Don't hesitate now. Go.
       objectReference: {fileID: 0}
     - target: {fileID: 6802786734058366666, guid: b985ed18b06a2d94ca250ff0167da46f, type: 3}
       propertyPath: m_Layer

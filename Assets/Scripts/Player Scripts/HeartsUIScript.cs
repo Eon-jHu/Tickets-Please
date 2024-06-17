@@ -18,7 +18,7 @@ public class HeartsUIScript : MonoBehaviour
         for (int i = 0; i < maxHealth; i++)
         {
             GameObject heart = Instantiate(heartPrefab, heartContainer);
-            heart.GetComponent<RectTransform>().anchoredPosition = new Vector2(i * 150, 0); // change da value to increase/decrease space between hearts
+            heart.GetComponent<RectTransform>().anchoredPosition = new Vector2(i *60, 0); // change da value to increase/decrease space between hearts
             hearts.Add(heart);
         }
     }

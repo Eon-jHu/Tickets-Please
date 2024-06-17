@@ -49,11 +49,11 @@ TagManager:
   - name: DoubleChairs
     uniqueID: 1057468305
     locked: 0
-  - name: Interactables
-    uniqueID: 2886771371
-    locked: 0
   - name: DoubleTables
     uniqueID: 837375885
+    locked: 0
+  - name: Interactables
+    uniqueID: 2886771371
     locked: 0
   - name: Player
     uniqueID: 1617840965
