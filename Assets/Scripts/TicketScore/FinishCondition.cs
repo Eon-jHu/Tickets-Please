@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class FinishCondition : MonoBehaviour
 {
-    private bool PlayerIsInFinalDoor = false;
     [SerializeField] private GameObject TicketPromptText;
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -13,8 +12,6 @@ public class FinishCondition : MonoBehaviour
         // Check if the player is colliding with the NPC.
         if (collision.CompareTag("Player"))
         {
-            PlayerIsInFinalDoor = true;
-
             // If player has collected enough tickets.
             if (TicketScore.TicketNumber >= 9)
             {
@@ -29,15 +26,6 @@ public class FinishCondition : MonoBehaviour
                 // Display to player not enough tickets.
                 Debug.Log("Not enough tickets collected");
             }
-        }
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        // Check if the player is colliding with the NPC.
-        if (collision.CompareTag("Player"))
-        {
-            PlayerIsInFinalDoor = false;
         }
     }
 
