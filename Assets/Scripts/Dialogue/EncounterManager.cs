@@ -126,7 +126,10 @@ public class EncounterManager : MonoBehaviour
         if (m_ResponseButtons[_buttonIndex].m_Response.m_ReplyToResponse != null)
         {
             // Start a new (final) encounter
-            StartEncounter(m_ResponseButtons[_buttonIndex].m_Response.m_ReplyToResponse, m_DialogueManager.m_DialogueSpace.m_ConversingObject, m_EState);
+            StartEncounter(
+                m_ResponseButtons[_buttonIndex].m_Response.m_ReplyToResponse,
+                m_DialogueManager.m_DialogueSpace.m_ConversingObject,
+                m_EState);
 
             // Show continue button
             m_ContinueButton.gameObject.SetActive(true);

@@ -10,12 +10,19 @@ public class ChatGPTManager : MonoBehaviour
 
     private List<ChatMessage> messages = new List<ChatMessage>();
 
-    public async void AskChatGPT(string _prompt)
+    public async Task<string> AskChatGPT(string _prompt)
     {
+        if (string.IsNullOrEmpty(_prompt))
+        {
+            Debug.LogError("Prompt cannot be null or empty.");
+            return null; // Or throw an ArgumentException
+        }
+
         ChatMessage newMessage = new ChatMessage();
         newMessage.Content = _prompt;
         newMessage.Role = "user";
-
+        
+        string responseContent = null;
         messages.Add(newMessage);
 
         CreateChatCompletionRequest request = new CreateChatCompletionRequest();
@@ -23,15 +30,30 @@ public class ChatGPTManager : MonoBehaviour
         request.Model = "gpt-4.1-nano";
 
         // Create the response
-        var response = await openAI.CreateChatCompletion(request);
-
-        if (response.Choices != null && response.Choices.Count > 0)
+        try
         {
-            var chatResponse = response.Choices[0].Message;
-            messages.Add(chatResponse);
+            var response = await openAI.CreateChatCompletion(request);
 
-            Debug.Log("ChatGPT Response: " + chatResponse.Content);
+            if (response.Choices != null && response.Choices.Count > 0)
+            {
+                var choice = response.Choices[0];
+                var chatResponse = choice.Message;
+                messages.Add(chatResponse); // Add to history
+                responseContent = chatResponse.Content;
+
+                Debug.Log($"ChatGPT response: {responseContent}");
+            }
+            else
+            {
+                Debug.LogError("ChatGPT response is null.");
+            }
         }
+        catch (System.Exception ex)
+        {
+            Debug.LogError($"Error calling ChatGPT API: {ex.Message}\n{ex.StackTrace}");
+        }
+
+        return responseContent;
     }
 
     // Start is called before the first frame update
