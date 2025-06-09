@@ -8,7 +8,29 @@ public class ChatGPTManager : MonoBehaviour
 {
     private OpenAIApi openAI = new OpenAIApi();
 
-    private List<ChatMessage> messages = new List<ChatMessage>();
+    private readonly List<ChatMessage> messages = new List<ChatMessage>();
+
+    // ----------------------- Singleton -----------------------
+    public static ChatGPTManager Instance { get; private set; }
+
+    private void Awake()
+    {
+        if (Instance == null)
+        {
+            Instance = FindObjectOfType<ChatGPTManager>();
+        }
+        else if (Instance != FindObjectOfType<ChatGPTManager>())
+        {
+            Destroy(FindObjectOfType<ChatGPTManager>());
+        }
+    }
+
+    // OnDestroy is called when the object is destroyed
+    private void OnDestroy()
+    {
+        Instance = null;
+    }
+    // ---------------------------------------------------------
 
     public async Task<string> AskChatGPT(string _prompt)
     {
@@ -54,17 +76,5 @@ public class ChatGPTManager : MonoBehaviour
         }
 
         return responseContent;
-    }
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }

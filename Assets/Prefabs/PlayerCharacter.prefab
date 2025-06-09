@@ -126,6 +126,7 @@ GameObject:
   - component: {fileID: 2099142970}
   - component: {fileID: 843803759462811513}
   - component: {fileID: 2099142971}
+  - component: {fileID: 4769038449521245213}
   m_Layer: 0
   m_Name: PlayerCharacter
   m_TagString: Player
@@ -166,7 +167,7 @@ SortingGroup:
   m_GameObject: {fileID: 7774268087239649033}
   m_Enabled: 1
   m_SortingLayerID: 1617840965
-  m_SortingLayer: 2
+  m_SortingLayer: 5
   m_SortingOrder: 0
 --- !u!50 &6865200236037115751
 Rigidbody2D:
@@ -232,6 +233,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_PlayerMovement: {fileID: 2099142971}
+  m_TicketUI: {fileID: 0}
 --- !u!114 &2099142971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -245,3 +247,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   MovementSpeed: 5
+  bCanMove: 1
+--- !u!114 &4769038449521245213
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7774268087239649033}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b45ab8785058cfb4bb2a020001bc4a54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

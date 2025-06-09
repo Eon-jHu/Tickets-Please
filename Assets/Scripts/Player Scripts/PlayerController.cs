@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] public GameObject m_TicketUI;
 
+    public Attitude PlayerAttitude { get;  private set; }
+
     // ----------------------- Singleton -----------------------
     public static PlayerController Instance { get; private set; }
 
@@ -26,6 +28,7 @@ public class PlayerController : MonoBehaviour
     private void Start()
     {
         m_TicketUI.SetActive(false);
+        PlayerAttitude = GetComponent<Attitude>();
     }
 
     // OnDestroy is called when the object is destroyed

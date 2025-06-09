@@ -20,8 +20,16 @@ public class ConversableObject : InteractableObject
     [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private GameObject SpeechBubble;
 
+    Temperament NPCTemperament;
 
     // --------------- Functions --------------- //
+    private void Start()
+    {
+        // Generate a random Temperament for this NPC
+        NPCTemperament = new Temperament();
+        NPCTemperament.SetRandomTemperament();
+    }
+
     protected override void OnInteract()
     {
         if (NPCInteractionComplete)
