@@ -118,7 +118,7 @@ public class ChatGPTManager : MonoBehaviour
 
         CreateChatCompletionRequest request = new CreateChatCompletionRequest();
         request.Messages = newMessageList;
-        request.Model = "gpt-4.1-nano";
+        request.Model = "gpt-4.1-mini";
 
         // Create the response
         try
@@ -143,7 +143,7 @@ public class ChatGPTManager : MonoBehaviour
             Debug.LogError($"Error calling ChatGPT API: {ex.Message}\n{ex.StackTrace}");
         }
 
-        return responseContent;
+        return ExtractBracketedString(responseContent);
     }
 
 
@@ -177,5 +177,18 @@ public class ChatGPTManager : MonoBehaviour
         return matches.Cast<Match>()
                       .Select(m => m.Groups[1].Value)
                       .ToArray();
+    }
+
+    // Extracts a bracketed string from a given text
+    public string ExtractBracketedString(string response)
+    {
+        if (string.IsNullOrEmpty(response))
+        {
+            return "";
+        }
+
+        string regex = @"\s*\((.*?)\)";
+
+        return Regex.Replace(response, regex, "").Trim();
     }
 }

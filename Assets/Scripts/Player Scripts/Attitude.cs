@@ -14,4 +14,19 @@ public class Attitude : MonoBehaviour
     };
 
     public int AttitudeValue = 3; // Default to neutral attitude
+
+    public void AddAttitudeValue(int _val)
+    {
+        AttitudeValue += _val;
+
+        // Clamp values
+        if (AttitudeValue < 0)
+        {
+            AttitudeValue = 0;
+        }
+        else if (AttitudeValue >= AttitudePrompts.Length)
+        {
+            AttitudeValue = AttitudePrompts.Length - 1;
+        }
+    }
 }

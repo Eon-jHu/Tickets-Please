@@ -35,7 +35,7 @@ public class EncounterManager : MonoBehaviour
     [SerializeField]
     private Button m_ContinueButton;
 
-    private readonly List<Response> ChatResponses = new();
+    private List<Response> ChatResponses = new();
 
     private Task GenerateResponsesTask;
 
@@ -191,23 +191,10 @@ public class EncounterManager : MonoBehaviour
                 {
                     if (GenerateResponsesTask != null)
                     {
-                        // If the responses have finished loading
-                        while (!GenerateResponsesTask.IsCompleted)
-                        {
-                            // Wait for the task to complete
-                            Debug.Log("Waiting for response task to complete...");
-                        }
-
-                        Response[] responses = ChatResponses.ToArray();
-
-                        // Start responding
-                        m_EState = EncounterState.PlayerResponding;
-                        StartResponding(responses);
-
+                        _ = GenerateAndDisplayResponses();
                     }
                     else
                     {
-                        // If the responses are still loading, wait for them
                         Debug.Log("No response task detected.");
                     }
                 }
@@ -218,6 +205,14 @@ public class EncounterManager : MonoBehaviour
             }
         }
 
+    }
+
+    private async Task GenerateAndDisplayResponses()
+    {
+        await GenerateResponsesTask;
+        Response[] responses = ChatResponses.ToArray();
+        m_EState = EncounterState.PlayerResponding;
+        StartResponding(responses);
     }
 
     public void OnResponseButtonClick(int _buttonIndex)
@@ -250,7 +245,7 @@ public class EncounterManager : MonoBehaviour
             else
             {
                 // Change player attitude based on the response
-                PlayerController.Instance.PlayerAttitude.AttitudeValue += m_ResponseButtons[_buttonIndex].m_Response.m_AttitudeValueModifier;
+                PlayerController.Instance.PlayerAttitude.AddAttitudeValue(m_ResponseButtons[_buttonIndex].m_Response.m_AttitudeValueModifier);
 
                 // Start a new (final) encounter
                 _ = StartEncounter(
@@ -325,7 +320,9 @@ public class EncounterManager : MonoBehaviour
             responseButton.gameObject.SetActive(false);
         }
 
-        // Disable the speech bubble.
+        // Clear responses
+        ChatResponses.Clear();
+        ChatResponses = new();
 
         // End Dialogue
         m_DialogueManager.EndDialogue();

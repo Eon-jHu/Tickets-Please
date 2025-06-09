@@ -15,14 +15,13 @@ public class ConversableObject : InteractableObject
     public Temperament m_Temperament;
 
     [NonSerialized]
-    public bool PlayerIsClose = false;
-
-    [NonSerialized]
     public bool NPCInteractionComplete = false;
 
     // Serialised class variables
     [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private GameObject SpeechBubble;
+
+    private Task conversationTask = null;
 
     // Local variables
     private float m_InteractionCooldown = 0.5f;
@@ -45,6 +44,12 @@ public class ConversableObject : InteractableObject
         }
         m_LastInteractTime = Time.time;
 
+        // Check conversation task complete
+        if (conversationTask != null && !conversationTask.IsCompleted)
+        {
+            return;
+        }
+
 
         if (NPCInteractionComplete)
         {
@@ -53,62 +58,34 @@ public class ConversableObject : InteractableObject
 
         if (!HasInteracted)
         {
-            // Ensure player is within ranger of the NPC before talking.
-            if (PlayerIsClose)
+            // Reset conversation task
+            conversationTask = null;
+
+            // Set HasInteracted to true
+            base.OnInteract();
+
+            Debug.Log(m_InitialDialogue.m_Name + " is speaking...");
+
+            // Set the current NPC for interaction to this instance only.
+            dialogueManager.SetCurrentNPC(this);
+
+            // Start Dialoguing
+            if (m_ShouldUseChatGPT)
             {
-                base.OnInteract();
-
-                Debug.Log(m_InitialDialogue.m_Name + " is speaking...");
-
-                // Set the current NPC for interaction to this instance only.
-                dialogueManager.SetCurrentNPC(this);
-
-                // Start Dialoguing
-                if (m_ShouldUseChatGPT)
-                {
-                    _ = EncounterManager.Instance.StartEncounter(m_InitialDialogue, this, EncounterState.NPCTalking);
-                }
-                else
-                {
-                    EncounterManager.Instance.StartEncounterNoLLM(m_InitialDialogue, this, EncounterState.NPCTalking);
-                }
-
-                // Speech Bubble Set to Disable
-                SpeechBubble.SetActive(false);
+                conversationTask = EncounterManager.Instance.StartEncounter(m_InitialDialogue, this, EncounterState.NPCTalking);
             }
+            else
+            {
+                EncounterManager.Instance.StartEncounterNoLLM(m_InitialDialogue, this, EncounterState.NPCTalking);
+            }
+
+            // Speech Bubble Set to Disable
+            SpeechBubble.SetActive(false);
         }
         // If alreading interacting, simulate "CONTINUE" button
         else
         {
             EncounterManager.Instance.ContinueEncounter();
-        }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        // Check if the player is colliding with the NPC.
-        if (collision.CompareTag("Player"))
-        {
-            PlayerIsClose = true;
-        }
-
-        base.OnCollided();
-    }
-
-    private void OnTriggerExit2D(Collider2D collision)
-    {
-        // Check if the player is colliding with the NPC.
-        if (collision.CompareTag("Player"))
-        {
-            PlayerIsClose = false;
-        }
-    }
-
-    protected void Update()
-    {
-        if (PlayerIsClose)
-        {
-            OnCollided();
         }
     }
 }

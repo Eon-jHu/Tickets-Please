@@ -30,9 +30,9 @@ public class StoryManager : MonoBehaviour
     private string Scenario = "You are in a train and the player is the train conductor," +
         "looking to collect your tickets." +
         "The player has approached you to do so now. " +
-        "Don't give the player your ticket until after the player responds. ";
+        "You WILL give the player your ticket, but the player must reply first. ";
 
-    private string StoryEvent = ""; // eg. "the player has turned off the lights in the carriage"
+    public string StoryEvent = "";
 
 
 
@@ -40,7 +40,7 @@ public class StoryManager : MonoBehaviour
     public string CraftDialoguePrompt(ConversableObject _npc, PlayerController _player)
     {
         // Initial NPC prompt
-        string prompt = $"Roleplay as a {_npc.m_InitialDialogue.m_Name} NPC " +
+        string prompt = $"You are a {_npc.m_InitialDialogue.m_Name} " +
             $"who is {_npc.m_Temperament.TemperamentPrompt[_npc.m_Temperament.CurrentTemperament]}. " +
             Scenario +
             $"The player has acted {_player.PlayerAttitude.AttitudePrompts[_player.PlayerAttitude.AttitudeValue]} so far. ";
@@ -48,7 +48,7 @@ public class StoryManager : MonoBehaviour
         // Add any relevant events to the prompt (rumors)
         if (!string.IsNullOrEmpty(StoryEvent))
         {
-            prompt += $"(Additionally, {StoryEvent}, which you can mention if relevant.)";
+            prompt += $"(Additionally, {StoryEvent}, which you can allude to if relevant.)";
         }
 
         return prompt;
@@ -66,10 +66,16 @@ public class StoryManager : MonoBehaviour
     // Crafts a prompt for the player to respond to the NPC's dialogue
     public string CraftResponsesPrompt()
     {
-        return "Generate 4 one-sentence responses which the player could say in response to the above dialogue. " +
-            "The first response should be the most straightforwards and confrontational, " +
+        return "Generate 4 one-sentence responses which the player (an awkward female train conductor) " +
+            "could say in response to the above dialogue. Remember that she is trying to collect train tickets. " +
+            "The first response should be the most unempathetic and confrontational, " +
             "and the rest of the responses should get increasingly more softer-spoken, up until the fourth response, " +
-            "which is the most roundabout and gentle.\n" +
+            "which is the most empathetic and gentle.\n" +
             "Encapsulate each response with quotation marks.";
+    }
+
+    public void AddStoryEvent(string _newEvent)
+    {
+        StoryEvent += _newEvent;
     }
 }

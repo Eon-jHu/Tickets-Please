@@ -16,7 +16,7 @@ public class FinishCondition : MonoBehaviour
             if (TicketScore.TicketNumber >= 9)
             {
                 // Player can exit, load final scene.
-                SceneManager.LoadScene("OutroScene", LoadSceneMode.Single);
+                SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
 
                 // Reset ticket score value so game can be replayed.
                 TicketScore.TicketNumber = -1;
