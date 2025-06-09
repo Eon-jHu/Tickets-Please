@@ -13,7 +13,7 @@ public class Attitude : MonoBehaviour
         "very kindly"
     };
 
-    public int AttitudeValue = 3; // Default to neutral attitude
+    public int AttitudeValue = 2; // Default to neutral attitude
 
     public void AddAttitudeValue(int _val)
     {

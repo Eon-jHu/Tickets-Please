@@ -27,10 +27,8 @@ public class StoryManager : MonoBehaviour
     }
     // ---------------------------------------------------------
 
-    private string Scenario = "You are in a train and the player is the train conductor," +
-        "looking to collect your tickets." +
-        "The player has approached you to do so now. " +
-        "You WILL give the player your ticket, but the player must reply first. ";
+    private string Scenario = "In third-person, act as if you are in a train and \"the player\" is the train conductor," +
+        "looking to collect your tickets. You will only respond with dialogue.\n";
 
     public string StoryEvent = "";
 
@@ -40,10 +38,11 @@ public class StoryManager : MonoBehaviour
     public string CraftDialoguePrompt(ConversableObject _npc, PlayerController _player)
     {
         // Initial NPC prompt
-        string prompt = $"You are a {_npc.m_InitialDialogue.m_Name} " +
-            $"who is {_npc.m_Temperament.TemperamentPrompt[_npc.m_Temperament.CurrentTemperament]}. " +
-            Scenario +
-            $"The player has acted {_player.PlayerAttitude.AttitudePrompts[_player.PlayerAttitude.AttitudeValue]} so far. ";
+        string prompt = Scenario +
+            $"In this scenario, you are a {_npc.m_InitialDialogue.m_Name} " +
+            $"who is {_npc.m_Temperament.TemperamentPrompt[_npc.m_Temperament.CurrentTemperament]}.\n" +
+            $"The player has acted {_player.PlayerAttitude.AttitudePrompts[_player.PlayerAttitude.AttitudeValue]} so far. " +
+            $"They have approached you to check your train ticket, but you may make conversation with them first.\n";
     
         // Add any relevant events to the prompt (rumors)
         if (!string.IsNullOrEmpty(StoryEvent))
@@ -67,7 +66,8 @@ public class StoryManager : MonoBehaviour
     public string CraftResponsesPrompt()
     {
         return "Generate 4 one-sentence responses which the player (an awkward female train conductor) " +
-            "could say in response to the above dialogue. Remember that she is trying to collect train tickets. " +
+            "could say in response to the above dialogue. She is trying to collect train tickets, " +
+            "but the responses should be as natural as possible. " +
             "The first response should be the most unempathetic and confrontational, " +
             "and the rest of the responses should get increasingly more softer-spoken, up until the fourth response, " +
             "which is the most empathetic and gentle.\n" +

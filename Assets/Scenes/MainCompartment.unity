@@ -14234,7 +14234,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ShouldUseChatGPT: 1
   m_InitialDialogue:
-    m_Name: FEMALE ANDROID
+    m_Name: CUTE ROBOT
     m_Sentences:
     - Beep boop.
     - Beep beep boop boop.
@@ -14296,7 +14296,7 @@ MonoBehaviour:
       m_Success: 0
       m_AttitudeValueModifier: 0
   m_TimeoutDialogue:
-    m_Name: FEMALE ANDROID
+    m_Name: CUTE ROBOT
     m_Sentences:
     - ... *bzzt*
     - Sorry, my languange simulation module was not operating correctly due to an

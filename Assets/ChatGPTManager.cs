@@ -143,7 +143,7 @@ public class ChatGPTManager : MonoBehaviour
             Debug.LogError($"Error calling ChatGPT API: {ex.Message}\n{ex.StackTrace}");
         }
 
-        return ExtractBracketedString(responseContent);
+        return ExtractEnclosedString(responseContent);
     }
 
 
@@ -180,14 +180,14 @@ public class ChatGPTManager : MonoBehaviour
     }
 
     // Extracts a bracketed string from a given text
-    public string ExtractBracketedString(string response)
+    public string ExtractEnclosedString(string response)
     {
         if (string.IsNullOrEmpty(response))
         {
             return "";
         }
 
-        string regex = @"\s*\((.*?)\)";
+        string regex = @"\s*\((.*?)\)|\s*\*(.*?)\*";
 
         return Regex.Replace(response, regex, "").Trim();
     }
