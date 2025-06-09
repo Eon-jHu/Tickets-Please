@@ -10,4 +10,6 @@ public class Response
     public Dialogue m_ReplyToResponse;
 
     public bool m_Success;
+
+    public int m_AttitudeValueModifier = 0;
 }

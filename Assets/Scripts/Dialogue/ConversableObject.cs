@@ -1,14 +1,18 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class ConversableObject : InteractableObject
 {
-    // Public class variables.
+    // Public class variables
+    public bool m_ShouldUseChatGPT = true;
+
     public InitialDialogue m_InitialDialogue;
     public Dialogue m_TimeoutDialogue;
+    public Temperament m_Temperament;
 
     [NonSerialized]
     public bool PlayerIsClose = false;
@@ -16,22 +20,32 @@ public class ConversableObject : InteractableObject
     [NonSerialized]
     public bool NPCInteractionComplete = false;
 
-    // Serialised class variables.
+    // Serialised class variables
     [SerializeField] private DialogueManager dialogueManager;
     [SerializeField] private GameObject SpeechBubble;
 
-    Temperament NPCTemperament;
+    // Local variables
+    private float m_InteractionCooldown = 0.5f;
+    private float m_LastInteractTime = -1f;
 
     // --------------- Functions --------------- //
     private void Start()
     {
         // Generate a random Temperament for this NPC
-        NPCTemperament = new Temperament();
-        NPCTemperament.SetRandomTemperament();
+        m_Temperament = new Temperament();
+        m_Temperament.SetRandomTemperament();
     }
 
     protected override void OnInteract()
     {
+        // Cooldown
+        if (Time.time < m_LastInteractTime + m_InteractionCooldown)
+        {
+            return;
+        }
+        m_LastInteractTime = Time.time;
+
+
         if (NPCInteractionComplete)
         {
             return;
@@ -50,7 +64,14 @@ public class ConversableObject : InteractableObject
                 dialogueManager.SetCurrentNPC(this);
 
                 // Start Dialoguing
-                EncounterManager.Instance.StartEncounter(m_InitialDialogue, this, EncounterState.NPCTalking);
+                if (m_ShouldUseChatGPT)
+                {
+                    _ = EncounterManager.Instance.StartEncounter(m_InitialDialogue, this, EncounterState.NPCTalking);
+                }
+                else
+                {
+                    EncounterManager.Instance.StartEncounterNoLLM(m_InitialDialogue, this, EncounterState.NPCTalking);
+                }
 
                 // Speech Bubble Set to Disable
                 SpeechBubble.SetActive(false);
